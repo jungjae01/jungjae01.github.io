@@ -253,34 +253,39 @@
       <section id="projects" class="section">
         <h2>Projects</h2>
 
+        <!-- To add another project: create one article with a unique data-project-title, verified date/context/skills, and either a local thumbnail or the neutral placeholder figure. Keep Featured selective and place all remaining substantive work in Additional Projects. -->
         <h3 class="subheading">Featured Projects</h3>
-        <article class="media-row project-row">
-          <figure>
-            <img src="assets/images/research/aril-robot-dog-interface.png" width="834" height="308" alt="Robot dog interface for language-guided interaction">
-          </figure>
+        <article class="media-row project-row" data-project-title="Agentic Cloud Benchmark">
+          <figure class="placeholder" aria-label="No public project image available">Cloud</figure>
           <div>
-            <h4>Robot Dog Project</h4>
-            <p class="meta">Autonomous Robot Intelligence Laboratory, Seoul National University - Apr 2025 - Aug 2025</p>
-            <p>Developed components for a Go 1 robot dog workflow including natural language interaction, map generation, localization support, and temporary GPS tracking. Jungjae's contributions included STT/TTS integration, intent parsing, ROS bag processing, SLAM map cleanup, and Android GPS data collection support.</p>
-            <p class="tech">Python - ROS - Linux - Git - SLAM - STT/TTS</p>
-            <p class="entry-links"><a href="https://jungjae01eng.github.io/aril.html">Project page</a></p>
+            <h4>Agentic Cloud Benchmark</h4>
+            <p class="meta">Boston University, ENG EC 528 Cloud Computing - Jan 2026 - Present</p>
+            <p>In-progress course project listed in the prior portfolio. Public technical details, repository links, and results were not available in the source material.</p>
+            <p class="tech">Cloud Computing</p>
           </div>
         </article>
 
-        <article class="media-row project-row">
-          <figure>
-            <img src="assets/images/research/srbl-mesh-optimization.png" width="1651" height="825" alt="Soft robot mesh optimization simulation">
-          </figure>
+        <article class="media-row project-row" data-project-title="Autonomous Robotic Arm Control">
+          <figure class="placeholder" aria-label="No public project image available">Robot Arm</figure>
           <div>
-            <h4>System Identification of the Soft Robot Project</h4>
-            <p class="meta">Soft Robotics and Bionics Laboratory, Seoul National University - May 2023 - Nov 2023</p>
-            <p>Supported simulation workflows for soft robot system identification. Jungjae optimized simulation meshes, implemented SOFA structures for deformation modeling, and evaluated simulation setup choices against tools including MuJoCo and Gazebo.</p>
-            <p class="tech">SOFA - MuJoCo - Python - Linux - Git</p>
-            <p class="entry-links"><a href="https://jungjae01eng.github.io/srbl.html">Project page</a></p>
+            <h4>Autonomous Robotic Arm Control</h4>
+            <p class="meta">Boston University, ENG EC 523 Deep Learning - Jan 2026 - Present</p>
+            <p>In-progress deep learning project listed in the prior portfolio with Python and Isaac Sim as verified technologies. Additional scope and outcomes were not publicly described.</p>
+            <p class="tech">Python - Isaac Sim</p>
           </div>
         </article>
 
-        <article class="media-row project-row">
+        <article class="media-row project-row" data-project-title="Robot Bartender">
+          <figure class="placeholder" aria-label="No public project image available">Robotics</figure>
+          <div>
+            <h4>Robot Bartender</h4>
+            <p class="meta">Boston University, ENG ME 416 Robotics - Jan 2026 - Present</p>
+            <p>In-progress robotics course project listed in the prior portfolio. Raspberry Pi is the only verified technology detail currently available from the public source.</p>
+            <p class="tech">Raspberry Pi</p>
+          </div>
+        </article>
+
+        <article class="media-row project-row" data-project-title="Pintos OS Development">
           <figure>
             <img src="assets/images/projects/pintos-os.png" width="737" height="520" alt="Pintos operating system project screenshot">
           </figure>
@@ -293,7 +298,20 @@
           </div>
         </article>
 
-        <article class="media-row project-row">
+        <article class="media-row project-row" data-project-title="Robot Dog Project">
+          <figure>
+            <img src="assets/images/research/aril-robot-dog-interface.png" width="834" height="308" alt="Robot dog interface for language-guided interaction">
+          </figure>
+          <div>
+            <h4>Robot Dog Project</h4>
+            <p class="meta">Autonomous Robot Intelligence Laboratory, Seoul National University - Apr 2025 - Aug 2025</p>
+            <p>Developed components for a Go 1 robot dog workflow including natural language interaction, map generation, localization support, and temporary GPS tracking. Jungjae's contributions included STT/TTS integration, intent parsing, ROS bag processing, SLAM map cleanup, and Android GPS data collection support.</p>
+            <p class="tech">Python - ROS - Linux - Git - SLAM - STT/TTS</p>
+            <p class="entry-links"><a href="https://jungjae01eng.github.io/aril.html">Project page</a></p>
+          </div>
+        </article>
+
+        <article class="media-row project-row" data-project-title="QGIS Clothoid Path">
           <figure>
             <img src="assets/images/projects/qgis-clothoid-path.jpg" width="1200" height="900" alt="QGIS and clothoid path planning project visual">
           </figure>
@@ -306,7 +324,20 @@
           </div>
         </article>
 
-        <article class="media-row project-row">
+        <article class="media-row project-row" data-project-title="Soft Robot System Identification">
+          <figure>
+            <img src="assets/images/research/srbl-mesh-optimization.png" width="1651" height="825" alt="Soft robot mesh optimization simulation">
+          </figure>
+          <div>
+            <h4>Soft Robot System Identification</h4>
+            <p class="meta">Soft Robotics and Bionics Laboratory, Seoul National University - May 2023 - Nov 2023</p>
+            <p>Supported simulation workflows for soft robot system identification. Jungjae optimized simulation meshes, implemented SOFA structures for deformation modeling, and evaluated simulation setup choices against tools including MuJoCo and Gazebo.</p>
+            <p class="tech">SOFA - MuJoCo - Python - Linux - Git</p>
+            <p class="entry-links"><a href="https://jungjae01eng.github.io/srbl.html">Project page</a></p>
+          </div>
+        </article>
+
+        <article class="media-row project-row" data-project-title="A UI for Visualizing Average Image Data">
           <figure>
             <img src="assets/images/projects/image-data-ui.jpg" width="846" height="635" alt="User interface for visualizing averaged image datasets">
           </figure>
@@ -322,50 +353,155 @@
           </div>
         </article>
 
-        <article class="media-row project-row">
-          <figure>
-            <img src="assets/images/projects/desk-lamp.jpg" width="924" height="693" alt="Adaptive desk lamp prototype">
-          </figure>
-          <div>
-            <h4>Desk Lamp</h4>
-            <p class="meta">Boston University, ENG EK 210 Engineering Design - Sep 2022 - Dec 2022</p>
-            <p>Prototyped a custom desk lamp for users with ADHD and autism, using adaptive light-spectrum adjustments, accessible switches, and flexible materials for users with limited fine motor control. Jungjae contributed to prototyping, Arduino integration, CAD, soldering, and documentation.</p>
-            <p class="tech">Arduino - CAD - Soldering - Prototyping</p>
-            <p class="entry-links">
-              <a href="https://docs.google.com/presentation/d/1BXslzm9hQ2UGxjr_N0Mx3avHFRZnhsDyolYfk0bAcNs/edit?usp=sharing">Presentation</a>
-              <a href="https://github.com/jungjae01eng/BostonU-EK210-DeskLamp/blob/eeff4433fddfd92e5bafa932e961f32ed6263c70/Desk%20Lamp%20Report.pdf">Report</a>
-            </p>
-          </div>
-        </article>
-
         <h3 class="subheading">Additional Projects</h3>
-        <div class="compact-list">
-          <article>
-            <h4>FMUC GUI Interface <span>2023</span></h4>
-            <p>GUI for remote vehicle navigation management and real-time location monitoring for the ZERO autonomous vehicle team.</p>
+        <div class="additional-projects">
+          <article class="project-compact-row" data-project-title="Portfolio Website">
+            <figure><img src="assets/images/projects/portfolio-website.jpg" width="1200" height="900" alt="Engineering portfolio website preview"></figure>
+            <div>
+              <h4>Portfolio Website</h4>
+              <p class="meta">Personal Project - May 2023 - Present</p>
+              <p>Designed and built an engineering portfolio using static web technologies.</p>
+              <p class="tech">HTML - CSS - JavaScript</p>
+              <p class="entry-links"><a href="#introduction">Website</a></p>
+            </div>
           </article>
-          <article>
-            <h4>Truss Bridge Design <span>2025</span></h4>
-            <p>Structural analysis and optimization project for a truss bridge in engineering mechanics.</p>
+
+          <article class="project-compact-row" data-project-title="Truss Bridge Design">
+            <figure><img src="assets/images/projects/truss-bridge.jpg" width="1200" height="900" alt="Truss bridge design project visual"></figure>
+            <div>
+              <h4>Truss Bridge Design</h4>
+              <p class="meta">Boston University, ENG ME 301 Mechanics 1 - Sep 2025 - Dec 2025</p>
+              <p>Engineered a truss bridge with structural analysis and optimization to achieve maximum load capacity.</p>
+              <p class="tech">MATLAB</p>
+              <p class="entry-links"><a href="https://github.com/jungjae01eng/BostonU-ENGEK301_EngineeringMechanics1">GitHub</a></p>
+            </div>
           </article>
-          <article>
-            <h4>Tractive System Active Lamp <span>2021-2022</span></h4>
-            <p>PCB design using KiCad for a Formula SAE voltage-power indicator lamp.</p>
-            <p class="entry-links"><a href="https://github.com/jungjae01eng/TM-TSAL_System/blob/main/TSAL%20System.pdf">Report</a></p>
+
+          <article class="project-compact-row" data-project-title="Tactical Combat Casualty Care">
+            <figure><img src="assets/images/projects/tactical-combat-casualty-care.jpg" width="1200" height="900" alt="Tactical Combat Casualty Care redesign prototype"></figure>
+            <div>
+              <h4>Tactical Combat Casualty Care</h4>
+              <p class="meta">Republic of Korea Army - Mar 2024 - Aug 2024</p>
+              <p>Led redesign and manufacturing of combat shirts with integrated tourniquet attachments, with the prior portfolio reporting reduced application time to 5 seconds.</p>
+              <p class="tech">CAD</p>
+              <p class="entry-links"><a href="https://youtu.be/FjpZ4Uo5590">Video</a></p>
+            </div>
           </article>
-          <article>
-            <h4>Robotics End Effector <span>2022</span></h4>
-            <p>SolidWorks prototype design for Boston University Mars Rover robotic arm hardware.</p>
+
+          <article class="project-compact-row" data-project-title="FMUC GUI Interface">
+            <figure><img src="assets/images/projects/fmuc-gui-interface.jpg" width="651" height="488" alt="FMUC GUI interface for vehicle monitoring"></figure>
+            <div>
+              <h4>FMUC GUI Interface</h4>
+              <p class="meta">ZERO Autonomous Vehicle Team, Seoul National University - Sep 2023 - Nov 2023</p>
+              <p>Developed a GUI for remote vehicle navigation management and real-time location monitoring from a centralized control room.</p>
+              <p class="tech">GUI - Python</p>
+            </div>
           </article>
-          <article>
-            <h4>Room Temperature Monitor <span>2022</span></h4>
-            <p>Arduino temperature monitor with LCD, alarm behavior, circuit design, soldering, and 3D-printed battery housing.</p>
-            <p class="entry-links"><a href="https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Monitor_Design_Report.pdf">Report</a></p>
+
+          <article class="project-compact-row" data-project-title="Desk Lamp">
+            <figure><img src="assets/images/projects/desk-lamp.jpg" width="924" height="693" alt="Adaptive desk lamp prototype"></figure>
+            <div>
+              <h4>Desk Lamp</h4>
+              <p class="meta">Boston University, ENG EK 210 Engineering Design - Sep 2022 - Dec 2022</p>
+              <p>Prototyped a custom desk lamp for users with ADHD and autism, using adaptive light-spectrum adjustments, accessible switches, and flexible materials.</p>
+              <p class="tech">Arduino - CAD - Soldering</p>
+              <p class="entry-links"><a href="https://github.com/jungjae01eng/BostonU-EK210-DeskLamp/blob/eeff4433fddfd92e5bafa932e961f32ed6263c70/Desk%20Lamp%20Report.pdf">Report</a></p>
+            </div>
           </article>
-          <article>
-            <h4>Real-Time Adventures in a 2D Realm <span>2022</span></h4>
-            <p>2D game project using object-oriented software architecture and model-view-controller patterns.</p>
-            <p class="entry-links"><a href="https://github.com/jungjae01eng/BostonU-EK327-PokemonGame">GitHub</a></p>
+
+          <article class="project-compact-row" data-project-title="Real-Time Adventures in a 2D Realm">
+            <figure><img src="assets/images/projects/realtime-2d-game.jpg" width="903" height="677" alt="2D realm game project screenshot"></figure>
+            <div>
+              <h4>Real-Time Adventures in a 2D Realm</h4>
+              <p class="meta">Boston University, ENG EC 327 Software Engineering - Sep 2022 - Dec 2022</p>
+              <p>Developed a 2D game with real-time interactions, command handling, and an object-oriented MVC architecture.</p>
+              <p class="tech">C++ - Python - MATLAB</p>
+              <p class="entry-links"><a href="https://github.com/jungjae01eng/BostonU-EK327-PokemonGame">GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Magnetic Momentum">
+            <figure><img src="assets/images/projects/magnetic-momentum.jpg" width="1200" height="900" alt="Magnetic Momentum prototype components"></figure>
+            <div>
+              <h4>Magnetic Momentum</h4>
+              <p class="meta">Personal Project - May 2022 - Aug 2022</p>
+              <p>Explored magnetic flux and magnetic momentum concepts while designing and testing a helicopter wing concept and rechargeable-battery idea.</p>
+              <p class="tech">Magnetics - 3D Printing</p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Failure Mode and Effects Analysis">
+            <figure><img src="assets/images/projects/fmea.jpg" width="1200" height="900" alt="Failure Mode and Effects Analysis project visual"></figure>
+            <div>
+              <h4>Failure Mode and Effects Analysis</h4>
+              <p class="meta">Boston University Terrier Motorsport, Formula SAE - Jan 2022 - May 2022</p>
+              <p>Conducted FMEA to identify potential failures and frequencies for vehicle safety standards and preparedness.</p>
+              <p class="tech">Analysis</p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Robotics End Effector">
+            <figure><img src="assets/images/projects/robotics-end-effector.jpg" width="1200" height="901" alt="Robotics end effector CAD and prototype visual"></figure>
+            <div>
+              <h4>Robotics End Effector</h4>
+              <p class="meta">Boston University Mars Rover Robotics - Jan 2022 - May 2022</p>
+              <p>Designed first and second SolidWorks prototypes for a robotics end effector, prioritizing functionality and durability for system compatibility.</p>
+              <p class="tech">CAD - SolidWorks</p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Gavel Pen and Name Plate">
+            <figure><img src="assets/images/projects/gavel-pen-name-plate.jpg" width="1200" height="900" alt="Gavel pen and engraved name plate project"></figure>
+            <div>
+              <h4>Gavel Pen and Name Plate</h4>
+              <p class="meta">Personal Project - Jan 2022 - May 2022</p>
+              <p>Designed a custom gavel with a functional pen holder and an engraved name plate using manual lathes and CNC milling.</p>
+              <p class="tech">Lathes - Milling</p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Room Temperature Monitor">
+            <figure><img src="assets/images/projects/room-temperature-monitor.jpg" width="569" height="427" alt="Room temperature monitor electronics prototype"></figure>
+            <div>
+              <h4>Room Temperature Monitor</h4>
+              <p class="meta">Boston University, ENG EK 131 Engineering Hands On - Jan 2022 - May 2022</p>
+              <p>Built an Arduino-based room temperature monitor with LCD output, alarm behavior, thermistor sensing, and a custom 3D-printed battery box.</p>
+              <p class="tech">MATLAB - Arduino - 3D Printing - Soldering - Circuit Design - CAD</p>
+              <p class="entry-links"><a href="https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Arduino.ino">Arduino Code</a> <a href="https://github.com/jungjae01eng/BostonU-EK131-RoomTempMonitor/blob/master/Monitor_Design_Report.pdf">Report</a></p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Tractive System Active Lamp">
+            <figure><img src="assets/images/projects/tsal-pcb.jpg" width="935" height="701" alt="Tractive System Active Lamp PCB project"></figure>
+            <div>
+              <h4>Tractive System Active Lamp</h4>
+              <p class="meta">Boston University Terrier Motorsport, Formula SAE - Sep 2021 - Jan 2022</p>
+              <p>Designed a KiCad PCB to power a red flashing lamp operating at 3 Hz for high-voltage status indication above the driver.</p>
+              <p class="tech">PCB - Circuit Design - Soldering</p>
+              <p class="entry-links"><a href="https://github.com/jungjae01eng/TM-TSAL_System/blob/main/TSAL%20System.pdf">Report</a> <a href="https://docs.google.com/document/d/1MoZfU1hfXyS7ZoeUlv_51n64_MBDvMeHghrC-t6IEa0/edit">Competition Report</a></p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Analysis of the Health of Low-Income Families">
+            <figure><img src="assets/images/projects/low-income-health-analysis.jpg" width="791" height="593" alt="Health analysis project visual"></figure>
+            <div>
+              <h4>Analysis of the Health of Low-Income Families</h4>
+              <p class="meta">Boston University, ENG EK 125 Programming - Nov 2021 - Dec 2021</p>
+              <p>Analyzed relationships between healthcare access in low-income families and causes of death using MATLAB and machine learning.</p>
+              <p class="tech">MATLAB - Machine Learning - Data Analysis</p>
+              <p class="entry-links"><a href="https://docs.google.com/document/d/1_n9gceYiubJf97mL8kV1vI1nZyCBsz72DHls9GYW_1c/edit?usp=sharing">Report</a></p>
+            </div>
+          </article>
+
+          <article class="project-compact-row" data-project-title="Analysis of the Force Exerted by an Elevator">
+            <figure><img src="assets/images/projects/elevator-force-analysis.jpg" width="705" height="528" alt="Elevator force data analysis project visual"></figure>
+            <div>
+              <h4>Analysis of the Force Exerted by an Elevator</h4>
+              <p class="meta">Boston University, ENG EK 125 Programming - Oct 2021 - Nov 2021</p>
+              <p>Collected acceleration data from three elevators at Boston University Warren Towers and used MATLAB to compute maximum and minimum force.</p>
+              <p class="tech">MATLAB - Data Analysis</p>
+              <p class="entry-links"><a href="https://docs.google.com/document/d/1Th-Lg_VTd58958W6QPklpQryJUs6eTrcC9E6Ib9kSmk/edit?usp=sharing">Report</a></p>
+            </div>
           </article>
         </div>
       </section>
@@ -378,6 +514,7 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
 

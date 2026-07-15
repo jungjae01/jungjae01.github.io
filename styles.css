@@ -364,6 +364,42 @@ h4 {
   font-size: 0.94rem;
 }
 
+
+/* Additional project rows: add a new row with data-project-title in index.html, verified metadata, and a local image or .placeholder figure. */
+.additional-projects {
+  display: grid;
+  gap: 0;
+  margin-top: 0.75rem;
+}
+
+.project-compact-row {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 0.9rem;
+  padding: 0.95rem 0;
+  border-top: 1px solid var(--subtle);
+}
+
+.project-compact-row figure {
+  margin: 0;
+}
+
+.project-compact-row figure img,
+.project-compact-row .placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--soft);
+  border: 1px solid var(--subtle);
+}
+
+.project-compact-row p {
+  margin-bottom: 0.3rem;
+}
+
+.project-compact-row .tech {
+  font-size: 0.88rem;
+}
 .site-footer {
   padding: 1.6rem 0 2.5rem;
   color: var(--muted);
@@ -482,6 +518,7 @@ h4 {
     animation-iteration-count: 1 !important;
   }
 }
+
 
 
 
