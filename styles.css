@@ -7,7 +7,7 @@
   --accent: #1e6a8d;
   --accent-hover: #8a4b1d;
   --focus: #b65f16;
-  --max-width: 940px;
+  --max-width: 860px;
 }
 
 * {
@@ -52,9 +52,13 @@ video {
   height: auto;
 }
 
+/* Main portfolio width constraint: match the 860px academic column used by the visual reference. */
+.site-shell,
 .wrapper {
-  width: min(100% - 40px, var(--max-width));
-  margin-inline: auto;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-inline: 20px;
 }
 
 .skip-link {
@@ -375,8 +379,9 @@ h4 {
 }
 
 @media (max-width: 760px) {
+  .site-shell,
   .wrapper {
-    width: min(100% - 28px, var(--max-width));
+    padding-inline: 14px;
   }
 
   .header-inner {
@@ -477,3 +482,6 @@ h4 {
     animation-iteration-count: 1 !important;
   }
 }
+
+
+
