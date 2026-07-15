@@ -1,11 +1,13 @@
-﻿# Content Review
+# Content Review
 
-This file tracks factual assumptions and items that should be confirmed before treating the new portfolio as fully current.
+This file tracks factual assumptions, unresolved links, missing assets, and information that should be confirmed before treating the portfolio as fully current.
 
 ## Source Material Used
 
 - Primary content source: `jungjae01eng/jungjae01eng.github.io`, including `index.html`, `aril.html`, `srbl.html`, `mbl.html`, `kl.html`, public images, logos, and PDFs.
-- Visual reference: `jindapark/jindapark.github.io`, used only for layout rhythm and academic presentation style.
+- Current implementation source: existing `codex/new-academic-portfolio` branch in `jungjae01.github.io`.
+- Visual reference: `jindapark/jindapark.github.io`, used only for width, spacing, and academic presentation style.
+- Paper-page structural reference: `https://haian-jin.github.io/ZipMap/`, used for high-level page hierarchy only.
 
 ## Items To Verify
 
@@ -13,36 +15,48 @@ This file tracks factual assumptions and items that should be confirmed before t
 - The source portfolio lists expected graduation as May 2027. Confirm this is still correct.
 - The source portfolio uses a Dropbox CV link. Confirm whether this is the preferred current CV URL or whether a local PDF should be added.
 - The source portfolio uses the GitHub account `jungjae01eng`, while this target site is `jungjae01.github.io`. Confirm the preferred public GitHub profile link.
-- The source portfolio lists two 2026 course projects as "Jan 2026 - Present" and "In Progress": Agentic Cloud Benchmark, Autonomous Robotic Arm Control, and Robot Bartender. These were omitted from featured content because the source provides no substantive public details yet.
-- The ARIL page lists "REACTOR" as "Manuscript In Preparation," while the home page says "Manuscript In Progress." The new site uses "manuscript in progress." Confirm preferred wording and whether authors should be listed.
-- The ARIL page title contains "Affordance-awareContextual" without a space. The new site corrects it to "Affordance-aware Contextual." Confirm the exact manuscript title.
-- The source portfolio lists "Beyond Destinations: Instruction-Aware Graph Path Planning and Navigation with OpenStreetMap" as under review without authors, venue, or year. Confirm author list, venue, and current status before expanding it.
-- The Advanced Intelligent Systems entry is dated October 30, 2025 in the source portfolio. Confirm the final citation details and whether there is a volume, issue, article number, or BibTeX entry to add.
-- The Device paper link and local PDF were both included. Confirm whether the local PDF is permitted for redistribution on this GitHub Pages site.
-- The AHA poster PDF was included from the source repository. Confirm whether public redistribution is acceptable.
-- The Morphable Biorobotics Laboratory description in the old site includes a UROP Student Research Award note. The new site preserves the award only inside the relevant research experience; confirm whether it should remain.
-- The source site contains encoding artifacts in some rendered text and misspellings such as "Relevent Course," "efficieny," "Robootics," and "neurodengenerative." The new copy corrects these obvious errors.
-- The Republic of Korea Army position was intentionally omitted from Research Experience because it is not a research appointment.
-- Leadership, awards, gallery, and extracurricular sections from the old site were intentionally omitted because the requested section order only allows Introduction, Education, Research Experience, Research Papers, and Projects.
-- Several Google Drive and Google Docs links from old projects may require sharing permissions. External access should be checked from a signed-out browser.
-- The Desk Lamp Google Slides presentation link from the old portfolio returned HTTP 410 during automated checking, so it was omitted from the new live page. The GitHub-hosted report link remains.
-- Wiley, ResearchGate, LinkedIn, and ScienceDirect links may block automated link checkers. They should be spot-checked manually in a browser if publication-link accuracy is critical.
-- The canonical URL `https://jungjae01.github.io/` currently returns GitHub Pages 404 before deployment. This is expected until the target repository is pushed and Pages is enabled.
-- The Jindapark reference repository includes table-based layout and external font declarations. The new implementation does not copy its source code and uses semantic HTML/CSS instead.
+- The canonical URL `https://jungjae01.github.io/` returned GitHub Pages 404 before deployment. This is expected until the target repository is pushed and Pages is enabled.
 
-## Featured Project Selection Rationale
+## Project Inventory Issues
 
-- Robot Dog Project: recent robotics and autonomous systems work with strong relevance to ROS, SLAM, robot interaction, and mapping.
-- System Identification of the Soft Robot Project: directly tied to peer-reviewed soft robotics publication work and simulation expertise.
-- Pintos OS Development: recent systems project showing low-level engineering depth.
-- QGIS Clothoid Path: autonomous vehicle planning/map workflow with a public technical document.
-- Average Image Data UI: software engineering and image/data tooling with a public repository and video.
-- Desk Lamp: substantial hands-on engineering design project with public report/presentation links and a usable visual.
+- The complete inventory currently includes 22 projects: 8 featured and 14 additional.
+- Agentic Cloud Benchmark, Autonomous Robotic Arm Control, and Robot Bartender are listed as `Jan 2026 - Present` and `In Progress` in the source portfolio. Public descriptions, outcomes, repositories, and images were unavailable, so the new site uses neutral descriptions and placeholders.
+- Agentic Cloud Benchmark has no verified technology labels beyond the Cloud Computing course context.
+- FMUC GUI Interface has no public link in the source portfolio. The old source contains a commented-out duplicate QGIS paper link, which was not reused.
+- Portfolio Website links to the current page anchor rather than an external repository because the old source used a self-link.
+- The Desk Lamp Google Slides presentation link from the old portfolio returned HTTP 410 during automated checking, so it was omitted. The GitHub-hosted report link remains.
+- Several Google Drive and Google Docs project links may require sharing permissions. External access should be checked from a signed-out browser.
+- The Analysis of the Health of Low-Income Families Google Docs report returned HTTP 410 during automated checking, so the live report link was omitted while keeping the project entry.
+- Tactical Combat Casualty Care is included because the user requested all projects; confirm whether this military project should remain public on an academic portfolio.
+- Robotics End Effector corrects the old typo "Robootics End Effector."
+- Local project images were copied only from Jungjae's prior public portfolio. Missing images use CSS placeholders instead of repeated `Unavailable.jpg` files.
+
+## Paper-Page Issues
+
+- Six local paper pages were created for all research-paper entries currently shown on the homepage.
+- The Advanced Intelligent Systems entry is dated October 30, 2025 in the source portfolio. Confirm final citation details, volume, issue, article number, and BibTeX.
+- The Device paper page links both ScienceDirect and a local PDF. Confirm whether the local PDF is permitted for redistribution on this GitHub Pages site.
+- The AHA vascular poster PDF is included from the source repository. Confirm whether public redistribution is acceptable.
+- Wiley, ResearchGate, LinkedIn, ScienceDirect, and some GitHub/Google links may block automated link checkers. They should be spot-checked manually in a browser if publication-link accuracy is critical.
+- The source portfolio lists "Beyond Destinations: Instruction-Aware Graph Path Planning and Navigation with OpenStreetMap" as under review without authors, venue, affiliations, abstract, figures, PDF, repository, results, or BibTeX. The local page intentionally stays minimal.
+- The ARIL page lists "REACTOR" as "Manuscript In Preparation," while the home page says "Manuscript In Progress." The new site uses "manuscript in progress." Confirm preferred wording.
+- The ARIL page title contained "Affordance-awareContextual" without a space. The new site corrects it to "Affordance-aware Contextual." Confirm the exact manuscript title.
+- REACTOR has no verified authors, affiliations, venue, abstract, figures, manuscript PDF, code, results, or BibTeX. The local page intentionally avoids confidential details.
+- Under-review and manuscript-stage pages do not expose private manuscripts, private figures, private repositories, or non-public quantitative results.
+- Published pages use citation text rather than verified BibTeX because BibTeX entries were not available in the source portfolio.
 
 ## Omitted Or De-Emphasized Content
 
-- Army TCCC project: public and technically interesting, but less aligned with the requested academic/research-oriented portfolio and potentially sensitive in context.
-- Portfolio Website: omitted to avoid circular self-reference.
-- Small introductory assignments and fabrication-only personal projects were moved out of featured treatment or omitted to keep the section compact.
-- Gallery images and extracurricular team galleries were not included because the request called for a restrained academic portfolio with five sections only.
+- Leadership, awards, gallery, and extracurricular sections from the old site are not included as standalone sections because the requested section order only allows Introduction, Education, Research Experience, Research Papers, and Projects.
+- Gallery-only assets and unrelated extracurricular images were not imported.
+- The Republic of Korea Army role is still omitted from Research Experience because it is not a research appointment, though the Tactical Combat Casualty Care project appears in Projects.
+
+## Validation Notes
+
+- Internal homepage and paper-page local `href`/`src` checks passed after the paper pages were added.
+- Duplicate project detection found 22 unique `data-project-title` values and no duplicates.
+- Responsive checks were run at 320px, 390px, 768px, 1024px, and 1440px.
+- Homepage and paper pages showed no horizontal overflow in automated Chrome checks.
+- Basic accessibility checks verified a skip link, one H1 per page, image alt text, visible focus CSS, semantic headings, and accessible copy buttons.
+- Reduced-motion handling is included in both homepage and paper-page stylesheets.
 
