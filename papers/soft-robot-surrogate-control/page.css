@@ -1,0 +1,206 @@
+.project-topbar {
+  padding: 1rem 0 0;
+}
+
+.back-home {
+  font-size: 0.94rem;
+}
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 0.8rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.section-nav a {
+  color: var(--muted);
+}
+
+.paper-hero h1 {
+  max-width: 850px;
+}
+
+.paper-hero .subtitle {
+  max-width: 760px;
+}
+
+.affiliations {
+  max-width: 780px;
+  font-size: 0.94rem;
+}
+
+.corresponding-note,
+.license-note,
+.table-note,
+.resource-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.media-placeholder {
+  display: grid;
+  gap: 0.5rem;
+  place-items: center;
+  min-height: 280px;
+  padding: 2rem;
+  border: 1px solid var(--subtle);
+  background: linear-gradient(180deg, #f8f7f3 0%, #eeeeea 100%);
+  text-align: center;
+}
+
+.media-placeholder strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.08rem;
+}
+
+.media-placeholder span {
+  max-width: 720px;
+  color: var(--muted);
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.metric {
+  padding: 1rem;
+  border-top: 2px solid var(--accent);
+  background: var(--soft);
+}
+
+.metric strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.metric span {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.domain-grid,
+.task-grid,
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.domain-step,
+.task-card,
+.future-grid li {
+  padding: 1rem;
+  border: 1px solid var(--subtle);
+  background: #fff;
+}
+
+.domain-step ul,
+.task-card ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.equation {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0.4rem 0 0.9rem;
+  padding: 0.55rem 0.75rem;
+  overflow-wrap: anywhere;
+  background: var(--soft);
+  border: 1px solid var(--subtle);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--subtle);
+  background: #fff;
+}
+
+.data-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+
+.data-table caption {
+  padding: 0.75rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.65rem 0.75rem;
+  border-top: 1px solid var(--subtle);
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  background: var(--soft);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.resource-list {
+  display: grid;
+  gap: 0.45rem;
+  padding-left: 1.2rem;
+}
+
+.citation-text {
+  padding: 1rem;
+  background: var(--soft);
+  border-left: 3px solid var(--accent);
+}
+
+.copy-status {
+  display: block;
+  min-height: 1.4em;
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .metrics-grid,
+  .domain-grid,
+  .task-grid,
+  .future-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .section-nav {
+    justify-content: flex-start;
+  }
+
+  .metrics-grid,
+  .domain-grid,
+  .task-grid,
+  .future-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .media-placeholder {
+    min-height: 220px;
+    padding: 1.25rem;
+  }
+
+  .metric strong {
+    font-size: 1.18rem;
+  }
+}
