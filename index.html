@@ -25,6 +25,7 @@
           <a href="#education">Education</a>
           <a href="#research-experience">Research Experience</a>
           <a href="#research-papers">Research Papers</a>
+          <a href="#research-posters">Research Posters</a>
           <a href="#projects">Projects</a>
         </nav>
       </div>
@@ -35,17 +36,17 @@
         <div class="intro-copy">
           <p class="eyebrow">Computer Engineering student at Boston University</p>
           <h1>Jungjae Lee</h1>
-          <p>
-            I am a Computer Engineering student at Boston University with a double concentration in
-            robotics and machine learning, and a minor in innovation and entrepreneurship.
-            My work spans robotic perception, planning, simulation, soft robotic systems, and applied
-            machine learning for autonomous and real-world robotic platforms.
+          <p> 
+            I am a Computer Engineering student at Boston University with concentrations in Robotics and Machine Learning.
           </p>
           <p>
-            I have contributed to research at Seoul National University and Boston University, including
-            autonomous robot intelligence, soft robot simulation, medical soft robotics, and computational
-            biomedicine projects. I am especially interested in systems that connect simulation, planning,
-            control, and physical robot deployment.
+            My research spans robotic perception, planning, control, simulation, soft robotic systems, and applied machine learning 
+            for autonomous systems and real-world robotic platforms.
+          </p>
+          <p> 
+            During my undergradaute studies, I have contributed to research at Carnegie Mellon University (2026), Seoul National University (2023, 2025), and Boston University (2022, 2023).
+            My experience includes autonomous robot intelligence, soft-robot simulation, medical soft robotics, and computational biomedicine.
+            I am particularly interested in building systems that connect simulation, planning, control, and physical robot deployment.
           </p>
           <ul class="profile-links" aria-label="Profile links">
             <li><a href="mailto:jungjae@bu.edu">Email</a></li>
@@ -68,19 +69,33 @@
           </div>
           <div class="entry-main">
             <h3>Boston University</h3>
-            <p class="role">B.S. in Computer Engineering</p>
-            <p>Double concentration in Robotics and Machine Learning. Minor in Innovation and Entrepreneurship.</p>
-            <p class="meta">Boston, MA, USA - Expected May 2027</p>
-            <p class="coursework">
-              Relevant coursework: Robotics, Machine Learning, Deep Learning, Cloud Computing,
-              Algorithms and Data Structures, Software Engineering, Operating Systems.
-            </p>
+            <p class="role">B.S. in Computer Engineering | Concentrations in Robotics and Machine Learning</p>
+            <p class="mobile-date">Expected May 2027 - Boston, MA, USA</p>
           </div>
+          <p class="entry-date">Expected May 2027<br><span>Boston, MA, USA</span></p>
         </article>
       </section>
 
       <section id="research-experience" class="section">
         <h2>Research Experience</h2>
+
+        <article class="research-entry">
+          <div class="logo-box">
+            <img src="assets/logos/carnegie-mellon-university.png" width="3840" height="2160" alt="Carnegie Mellon University logo">
+          </div>
+          <div class="entry-main">
+            <h3>Robotics Institute</h3>
+            <p class="role">Visiting Undergraduate Researcher - Carnegie Mellon University</p>
+            <p class="mobile-date">May 2025 - Present - Pittsburgh, PA</p>
+            <ul>
+              <li>Conducting research in robotics and intelligent systems.</li>
+              <li>Supporting the development and evaluation of robotics experiments.</li>
+              <li>Collaborating with researchers on technical implementation and analysis.</li>
+            </ul>
+            <p class="entry-links"><a href="https://www.ri.cmu.edu/">Lab page</a></p>
+          </div>
+          <p class="entry-date">May 2025 - Present<br><span>Pittsburgh, PA</span></p>
+        </article>
 
         <article class="research-entry">
           <div class="logo-box">
@@ -95,7 +110,7 @@
               <li>Implemented Isaac Sim and ROS workflows for robot locomotion, Nav2-based navigation, and obstacle avoidance experiments.</li>
               <li>Built components for natural human-robot interaction, intent parsing, SLAM map generation, map cleanup, and GPS tracking support.</li>
             </ul>
-            <p class="entry-links"><a href="https://jungjae01eng.github.io/aril.html">Project page</a></p>
+            <p class="entry-links"><a href="https://jungjae01eng.github.io/aril.html">Lab page</a></p>
           </div>
           <p class="entry-date">Apr 2025 - Aug 2025<br><span>Seoul, Korea</span></p>
         </article>
@@ -113,7 +128,7 @@
               <li>Optimized simulation meshes and improved computational efficiency for soft robot deformation models.</li>
               <li>Reproduced pneumatic actuation behavior and evaluated simulation workflows against alternatives including MuJoCo and Gazebo.</li>
             </ul>
-            <p class="entry-links"><a href="https://jungjae01eng.github.io/srbl.html">Project page</a></p>
+            <p class="entry-links"><a href="papers/soft-robot-surrogate-control/index.html">Lab page</a></p>
           </div>
           <p class="entry-date">May 2023 - Nov 2023<br><span>Seoul, Korea</span></p>
         </article>
@@ -131,7 +146,7 @@
               <li>Developed Python-based knowledge graphs for neurodegenerative disease subtypes.</li>
               <li>Worked on MedSAM-based medical image segmentation support for identifying regions of interest.</li>
             </ul>
-            <p class="entry-links"><a href="https://jungjae01eng.github.io/kl.html">Project page</a></p>
+            <p class="entry-links"><a href="https://jungjae01eng.github.io/kl.html">Lab page</a></p>
           </div>
           <p class="entry-date">Mar 2023 - May 2023<br><span>Boston, MA</span></p>
         </article>
@@ -149,7 +164,7 @@
               <li>Built and tested miniaturized soft robotic grasper components, soft force sensors, and actuator prototypes.</li>
               <li>Received a Boston University UROP Student Research Award in Fall 2022 for laparoscopy project work, as listed on the prior portfolio.</li>
             </ul>
-            <p class="entry-links"><a href="https://jungjae01eng.github.io/mbl.html">Project page</a></p>
+            <p class="entry-links"><a href="https://jungjae01eng.github.io/mbl.html">Lab page</a></p>
           </div>
           <p class="entry-date">Jan 2022 - May 2023<br><span>Boston, MA</span></p>
         </article>
@@ -164,14 +179,12 @@
             <img src="assets/images/research/srbl-mesh-optimization.png" width="1651" height="825" alt="Soft robot simulation mesh visualization">
           </figure>
           <div>
-            <h4><a href="/papers/soft-robot-surrogate-control/">Bridging High-Fidelity Simulations and Physics-Based Learning Using a Surrogate Model for Soft Robot Control</a></h4>
+            <h4><a href="papers/soft-robot-surrogate-control/index.html">Bridging High-Fidelity Simulations and Physics-Based Learning Using a Surrogate Model for Soft Robot Control</a></h4>
             <p>T. Hong, <strong>J. Lee</strong>, B. Song, and Y.-L. Park.</p>
             <p><em>Advanced Intelligent Systems</em>, 2025. Published. DOI: 10.1002/aisy.202500696.</p>
             <p class="summary">The paper connects high-fidelity simulation and physics-based learning through a surrogate model for soft robot control.</p>
             <p class="entry-links">
-              <a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202500696">Wiley</a>
-              <a href="https://www.researchgate.net/publication/397069791_Bridging_High-Fidelity_Simulations_and_Physics-Based_Learning_using_a_Surrogate_Model_for_Soft_Robot_Control">ResearchGate</a>
-              <a href="/papers/soft-robot-surrogate-control/">Project Page</a><a href="https://jungjae01eng.github.io/srbl.html">Source lab page</a>
+              <a href="papers/soft-robot-surrogate-control/index.html">Project Page</a>
             </p>
           </div>
         </article>
@@ -181,15 +194,13 @@
             <img src="assets/images/research/mbl-laparoscopy-testing.jpg" width="613" height="541" alt="Soft laparoscopic grasper testing setup">
           </figure>
           <div>
-            <h4><a href="/papers/modular-laparoscopic-grasper/">A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine</a></h4>
+            <h4><a href="papers/modular-laparoscopic-grasper/index.html">A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine</a></h4>
             <p>L. Kinnicutt, L. T. Gaeta, J. Rogatinsky, <strong>J. Lee</strong>, A. Cameron, A. Naik, D. Hess, and T. Ranzani.</p>
             <p><em>Device</em>, Volume 2, Issue 10, 2024. Published.</p>
             <p class="summary">The paper presents a modular soft robotic laparoscopic grasper designed for atraumatic small-intestine retraction.</p>
             <p class="entry-links">
-              <a href="https://www.sciencedirect.com/science/article/pii/S2666998624004824">ScienceDirect</a>
-              <a href="https://www.researchgate.net/publication/385045164_A_soft_robotic_modular_laparoscopic_grasper_for_atraumatic_retraction_of_the_small_intestine">ResearchGate</a>
-              <a href="assets/documents/mbl-laparoscopy-paper.pdf">Local PDF</a>
-              <a href="/papers/modular-laparoscopic-grasper/">Project Page</a><a href="https://jungjae01eng.github.io/mbl.html">Source lab page</a>
+              
+              <a href="papers/modular-laparoscopic-grasper/index.html">Project Page</a>
             </p>
           </div>
         </article>
@@ -199,32 +210,16 @@
             <img src="assets/images/research/mbl-laparoscopy-testing.jpg" width="613" height="541" alt="Prototype testing for soft laparoscopic grasper">
           </figure>
           <div>
-            <h4><a href="/papers/soft-laparoscopic-grasper/">A Soft Laparoscopic Grasper for Retraction of the Small Intestine</a></h4>
+            <h4><a href="papers/soft-laparoscopic-grasper-hsmr-2023/index.html">A Soft Laparoscopic Grasper for Retraction of the Small Intestine</a></h4>
             <p>L. Kinnicutt, <strong>J. Lee</strong>, J. Oden, L. T. Gaeta, S. K. Carroll, A. Rathi, Z. H. Lim, M. Lee, C. Orakwue, K. J. McDonald, D. Hess, and T. Ranzani.</p>
             <p><em>Hamlyn Symposium on Medical Robotics</em>, London, UK, 2023. Presented.</p>
             <p class="summary">This presentation describes a soft laparoscopic grasper for small-intestine retraction in medical robotics.</p>
             <p class="entry-links">
-              <a href="https://www.researchgate.net/publication/371866615_A_Soft_Laparoscopic_Grasper_for_Retraction_of_the_Small_Intestine">ResearchGate</a>
-              <a href="/papers/soft-laparoscopic-grasper/">Project Page</a><a href="https://jungjae01eng.github.io/mbl.html">Source lab page</a>
+              <a href="papers/soft-laparoscopic-grasper-hsmr-2023/index.html">Project Page</a>
             </p>
           </div>
         </article>
 
-        <article class="media-row">
-          <figure>
-            <img src="assets/images/research/mbl-vascular-poster.jpg" width="1146" height="859" alt="Poster preview for minimally invasive soft robotic prototypes">
-          </figure>
-          <div>
-            <h4><a href="/papers/vascular-occlusion-prototypes/">Minimally Invasive Soft Robotic Prototypes Provide Variable Occlusion in a Simplified Aortic Flow Model</a></h4>
-            <p>L. Kinnicutt, A. Pathak, T. Bohac, A. Peng, C. Taglietti, C. Lee, R. Rauf, <strong>J. Lee</strong>, LZ. Heng, J. Rogatinsky, K. McDonald, J. Siracuse, and T. Ranzani.</p>
-            <p><em>American Heart Association Resuscitation Science Symposium</em>, Chicago, USA, 2022. Presented.</p>
-            <p class="summary">This presentation reports soft robotic prototypes for variable occlusion in a simplified aortic flow model.</p>
-            <p class="entry-links">
-              <a href="assets/documents/mbl-vascular-poster.pdf">Poster</a>
-              <a href="/papers/vascular-occlusion-prototypes/">Project Page</a><a href="https://jungjae01eng.github.io/mbl.html">Source lab page</a>
-            </p>
-          </div>
-        </article>
 
         <h3 class="subheading">Under-review work and manuscripts</h3>
         <article class="media-row status-row">
@@ -233,7 +228,7 @@
             <h4><a href="/papers/instruction-aware-osm-navigation/">Beyond Destinations: Instruction-Aware Graph Path Planning and Navigation with OpenStreetMap</a></h4>
             <p>Status: Under review, as listed in the source portfolio.</p>
             <p class="summary">The manuscript concerns instruction-aware graph path planning and navigation using OpenStreetMap.</p>
-            <p class="entry-links"><a href="/papers/instruction-aware-osm-navigation/">Project Page</a><a href="https://jungjae01eng.github.io/aril.html">Source lab page</a></p>
+            <p class="entry-links"><a href="/papers/instruction-aware-osm-navigation/">Project Page</a></p>
           </div>
         </article>
 
@@ -245,7 +240,24 @@
             <h4><a href="/papers/reactor-humanoid-tool-use/">REACTOR: Replanning and Execution with Affordance-aware Contextual Tool-use for Humanoid Mobile-manipulation Reasoning</a></h4>
             <p>Status: Manuscript in progress, as listed in the source portfolio.</p>
             <p class="summary">The manuscript is listed as work in progress on humanoid mobile-manipulation reasoning.</p>
-            <p class="entry-links"><a href="/papers/reactor-humanoid-tool-use/">Project Page</a><a href="https://jungjae01eng.github.io/aril.html">Source lab page</a></p>
+            <p class="entry-links"><a href="/papers/reactor-humanoid-tool-use/">Project Page</a></p>
+          </div>
+        </article>
+      </section>
+
+      <section id="research-posters" class="section">
+        <h2>Research Posters</h2>
+        <article class="media-row">
+          <figure>
+            <img src="assets/images/research/mbl-vascular-poster.jpg" width="1146" height="859" alt="Poster preview for a soft robotic variable aortic occlusion prototype">
+          </figure>
+          <div>
+            <h4><a href="projects/soft-robotic-aortic-occlusion/index.html">Soft Robotic Variable Aortic Occlusion</a></h4>
+            <p class="meta">Research Poster</p>
+            <p class="summary">A catheter-delivered soft robotic prototype for controllable aortic occlusion using inflatable soft actuators and an internal deployable brace.</p>
+            <p class="entry-links">
+              <a href="projects/soft-robotic-aortic-occlusion/index.html">Project Page</a>
+            </p>
           </div>
         </article>
       </section>
@@ -333,7 +345,7 @@
             <p class="meta">Soft Robotics and Bionics Laboratory, Seoul National University - May 2023 - Nov 2023</p>
             <p>Supported simulation workflows for soft robot system identification. Jungjae optimized simulation meshes, implemented SOFA structures for deformation modeling, and evaluated simulation setup choices against tools including MuJoCo and Gazebo.</p>
             <p class="tech">SOFA - MuJoCo - Python - Linux - Git</p>
-            <p class="entry-links"><a href="https://jungjae01eng.github.io/srbl.html">Project page</a></p>
+            <p class="entry-links"><a href="papers/soft-robot-surrogate-control/index.html">Project page</a></p>
           </div>
         </article>
 
