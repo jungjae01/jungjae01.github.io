@@ -156,6 +156,30 @@ h2 {
   letter-spacing: 0;
 }
 
+.section:not(.intro) > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.section:not(.intro) > h2::before {
+  content: "";
+  width: 3px;
+  height: 1.05em;
+  flex: none;
+  border-radius: 999px;
+  background: var(--accent);
+  opacity: 0.72;
+}
+
+.section:not(.intro) > h2::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  margin-left: 0.15rem;
+  background: linear-gradient(to right, var(--subtle), transparent);
+}
+
 h3 {
   font-size: 1.08rem;
   line-height: 1.32;
@@ -365,8 +389,54 @@ h4 {
 }
 
 
-/* Additional project rows: add a new row with data-project-title in index.html, verified metadata, and a local image or .placeholder figure. */
-.additional-projects {
+/* Unified project list with compact, single-select skill reordering. */
+.project-controls {
+  margin-top: 0.8rem;
+}
+
+.project-controls-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+}
+
+.project-filter {
+  padding: 0.34rem 0.72rem;
+  border: 1px solid var(--subtle);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.project-filter:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.project-filter.is-active {
+  border-color: var(--text);
+  background: var(--text);
+  color: #fff;
+}
+
+.project-filter-note {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.project-list {
   display: grid;
   gap: 0;
   margin-top: 0.75rem;
@@ -374,7 +444,7 @@ h4 {
 
 .project-compact-row {
   display: grid;
-  grid-template-columns: 104px minmax(0, 1fr);
+  grid-template-columns: 104px minmax(0, 1fr) 150px;
   gap: 0.9rem;
   padding: 0.95rem 0;
   border-top: 1px solid var(--subtle);
@@ -399,6 +469,21 @@ h4 {
 
 .project-compact-row .tech {
   font-size: 0.88rem;
+}
+
+.project-date {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.project-mobile-date {
+  display: none;
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.86rem;
 }
 .site-footer {
   padding: 1.6rem 0 2.5rem;
@@ -480,6 +565,18 @@ h4 {
   .media-row figure video,
   .placeholder {
     max-width: 320px;
+  }
+
+  .project-compact-row {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+
+  .project-date {
+    display: none;
+  }
+
+  .project-mobile-date {
+    display: block;
   }
 
   .status-row {

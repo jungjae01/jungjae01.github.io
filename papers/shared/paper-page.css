@@ -74,6 +74,11 @@ button:focus-visible {
   transform: translateY(0);
 }
 
+.paper-topbar { padding-top: 1rem; }
+.paper-topbar .paper-shell { text-align: center; }
+.paper-topbar .back-link { min-height: 0; padding: 0; border: 0; background: transparent; color: var(--muted); font-size: 0.875rem; text-decoration: none; }
+.paper-topbar .back-link:hover { border: 0; color: var(--accent-hover); text-decoration: underline; }
+
 .paper-hero {
   padding: 3.5rem 0 2.2rem;
   text-align: center;
