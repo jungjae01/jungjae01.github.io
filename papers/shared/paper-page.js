@@ -5,7 +5,8 @@ document.querySelectorAll('[data-copy-target]').forEach((button) => {
 
   const announce = (message) => {
     if (status) status.textContent = message;
-    button.textContent = message === 'Citation copied to clipboard.' ? 'Copied' : originalLabel;
+    button.textContent =
+      message === 'Citation copied to clipboard.' ? 'Copied' : originalLabel;
     window.setTimeout(() => {
       button.textContent = originalLabel;
       if (status) status.textContent = '';
@@ -13,7 +14,9 @@ document.querySelectorAll('[data-copy-target]').forEach((button) => {
   };
 
   button.addEventListener('click', async () => {
-    const target = document.getElementById(button.getAttribute('data-copy-target'));
+    const target = document.getElementById(
+      button.getAttribute('data-copy-target')
+    );
     if (!target) {
       announce('Citation text was not found.');
       return;

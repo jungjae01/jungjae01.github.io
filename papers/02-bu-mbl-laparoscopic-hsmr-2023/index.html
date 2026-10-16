@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Soft Laparoscopic Grasper for Retraction of the Small Intestine | Jungjae Lee</title>
+    <meta name="description" content="An HSMR 2023 conference paper presenting an expandable soft laparoscopic grasper with suction, pneumatic actuation, and embedded force sensing for intestinal retraction.">
+    <link rel="canonical" href="https://jungjae01.github.io/papers/02-bu-mbl-laparoscopic-hsmr-2023/">
+    <meta property="og:title" content="A Soft Laparoscopic Grasper for Retraction of the Small Intestine">
+    <meta property="og:description" content="An HSMR 2023 conference paper presenting an expandable soft laparoscopic grasper with suction, pneumatic actuation, and embedded force sensing for intestinal retraction.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jungjae01.github.io/papers/02-bu-mbl-laparoscopic-hsmr-2023/">
+    <meta property="og:image" content="https://jungjae01.github.io/assets/images/research/1-bu-morphable-biorobotics-lab/02-bu-mbl-laparoscopic-hsmr-2023/grasper-design-workflow.png">
+    <meta property="og:image:width" content="920">
+    <meta property="og:image:height" content="1365">
+    <meta property="og:image:alt" content="Soft laparoscopic grasper workflow and prototype configurations.">
+    <meta name="citation_title" content="A Soft Laparoscopic Grasper for Retraction of the Small Intestine">
+    <meta name="citation_author" content="Kinnicutt, L.">
+    <meta name="citation_author" content="Lee, J.">
+    <meta name="citation_author" content="Oden, J.">
+    <meta name="citation_author" content="Gaeta, L. T.">
+    <meta name="citation_author" content="Carroll, S. K.">
+    <meta name="citation_author" content="Rathi, A.">
+    <meta name="citation_author" content="Lim, Z. H.">
+    <meta name="citation_author" content="Lee, M.">
+    <meta name="citation_author" content="Orakwue, C.">
+    <meta name="citation_author" content="McDonald, K. J.">
+    <meta name="citation_author" content="Hess, D.">
+    <meta name="citation_author" content="Ranzani, T.">
+    <meta name="citation_conference_title" content="The 15th Hamlyn Symposium on Medical Robotics">
+    <meta name="citation_publication_date" content="2023">
+    <meta name="citation_firstpage" content="97">
+    <meta name="citation_lastpage" content="98">
+    <meta name="citation_doi" content="10.31256/HSMR2023.51">
+    <meta name="citation_public_url" content="https://doi.org/10.31256/HSMR2023.51">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "A Soft Laparoscopic Grasper for Retraction of the Small Intestine",
+        "description": "An HSMR 2023 conference paper presenting an expandable soft laparoscopic grasper with suction, pneumatic actuation, and embedded force sensing for intestinal retraction.",
+        "image": "https://jungjae01.github.io/assets/images/research/1-bu-morphable-biorobotics-lab/02-bu-mbl-laparoscopic-hsmr-2023/grasper-design-workflow.png",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "L. Kinnicutt",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "J. Lee",
+            "url": "https://jungjae01.github.io/",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Electrical & Computer Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "J. Oden",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "L. T. Gaeta",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "S. K. Carroll",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "A. Rathi",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Biomedical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "Z. H. Lim",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "M. Lee",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Biomedical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "C. Orakwue",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Biomedical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "K. J. McDonald",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "D. Hess",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Section of Minimally Invasive and Weight Loss Surgery, Boston Medical Center, Boston, MA, USA"
+              },
+              {
+                "@type": "Organization",
+                "name": "Boston University School of Medicine, Boston, MA, USA"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "name": "T. Ranzani",
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              },
+              {
+                "@type": "Organization",
+                "name": "Department of Biomedical Engineering, Boston University College of Engineering, Boston, MA, USA"
+              },
+              {
+                "@type": "Organization",
+                "name": "Division of Materials Science & Engineering, Boston University College of Engineering, Boston, MA, USA"
+              }
+            ]
+          }
+        ],
+        "isPartOf": {
+          "@type": "CreativeWork",
+          "name": "The 15th Hamlyn Symposium on Medical Robotics"
+        },
+        "pagination": "97-98",
+        "datePublished": "2023",
+        "identifier": "https://doi.org/10.31256/HSMR2023.51",
+        "url": "https://doi.org/10.31256/HSMR2023.51",
+        "mainEntityOfPage": "https://jungjae01.github.io/papers/02-bu-mbl-laparoscopic-hsmr-2023/",
+        "additionalType": "https://schema.org/Article"
+      }
+    </script>
+    <link rel="icon" href="/assets/logos/favicon.svg?v=2" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans:400,500,600,700|Castoro">
+    <link rel="stylesheet" href="../shared/paper-page.css">
+    <link rel="stylesheet" href="../04-snu-srbl-surrogate-advanced-2025/page.css">
+    <link rel="stylesheet" href="page.css">
+  </head>
+
+  <body class="lvsm-project-page">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="project-topbar">
+      <div class="container publication-container">
+        <a class="back-home" href="../../index.html#research-papers">Back to Jungjae Lee portfolio</a>
+      </div>
+    </div>
+
+    <section class="hero publication-header">
+      <div class="hero-body">
+        <div class="container publication-container">
+          <h1 class="title publication-title">
+            A Soft Laparoscopic Grasper for Retraction of the Small Intestine
+          </h1>
+          <div class="publication-authors" aria-label="Authors">
+            <span class="author-block"><span class="publication-author author-link-pending">Lorenzo Kinnicutt</span><sup>1</sup>,</span>
+            <span class="author-block"><a class="publication-author featured-author" href="../../index.html"><strong>Jungjae Lee</strong></a><sup>2</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Janae Oden</span><sup>1</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Leah Gaeta</span><sup>1</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Sean Carroll</span><sup>1</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Anushka Rathi</span><sup>3</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Zi Heng Lim</span><sup>1</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Megan Lee</span><sup>3</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Chisom Orakwue</span><sup>3</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Kevin McDonald</span><sup>1</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Donald Hess</span><sup>4,5</sup>,</span>
+            <span class="author-block"><span class="publication-author author-link-pending">Tommaso Ranzani</span><sup>1,3,6</sup></span>
+          </div>
+          <div class="publication-affiliations">
+            <span class="affiliation-block"><sup>1</sup> Department of Mechanical Engineering, Boston University College of Engineering, Boston, MA, USA</span>
+            <span class="affiliation-block"><sup>2</sup> Department of Electrical &amp; Computer Engineering, Boston University College of Engineering, Boston, MA, USA</span>
+            <span class="affiliation-block"><sup>3</sup> Department of Biomedical Engineering, Boston University College of Engineering, Boston, MA, USA</span>
+            <span class="affiliation-block"><sup>4</sup> Section of Minimally Invasive and Weight Loss Surgery, Boston Medical Center, Boston, MA, USA</span>
+            <span class="affiliation-block"><sup>5</sup> Boston University School of Medicine, Boston, MA, USA</span>
+            <span class="affiliation-block"><sup>6</sup> Division of Materials Science &amp; Engineering, Boston University College of Engineering, Boston, MA, USA</span>
+          </div>
+          <div class="publication-links" aria-label="Project resources">
+            <span class="link-block">
+              <a class="publication-link external-link button is-normal is-rounded is-dark" href="https://doi.org/10.31256/HSMR2023.51" target="_blank" rel="noopener noreferrer">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 2h9l5 5v15H6zM15 2v6h5M9 13h8M9 17h8M9 9h2"/>
+                  </svg>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a class="publication-link button is-normal is-rounded is-dark" href="../03-bu-mbl-laparoscopic-device-2024/index.html">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 2h9l5 5v15H6zM15 2v6h5M9 13h8M9 17h8M9 9h2"/>
+                  </svg>
+                </span>
+                <span>Extended Journal Version</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a class="publication-link button is-normal is-rounded is-dark" href="#citation">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 7H3v6h5v4H3M17 7h-4v6h5v4h-5"/>
+                  </svg>
+                </span>
+                <span>BibTeX</span>
+              </a>
+            </span>
+          </div>
+          <div class="publication-venue">
+            <strong>The 15th Hamlyn Symposium on Medical Robotics, 2023</strong>
+            <span>HSMR 2023 &middot; Pages 97-98 &middot; DOI: 10.31256/HSMR2023.51</span>
+          </div>
+          <p class="publication-summary">
+            An expandable soft laparoscopic grasper that combines suction, fiber-reinforced pneumatic actuators, and embedded force sensors for preliminary intestinal grasping and retraction experiments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container publication-container">
+        <figure class="project-figure prototype-figure">
+          <a class="figure-link" href="../../assets/images/research/1-bu-morphable-biorobotics-lab/02-bu-mbl-laparoscopic-hsmr-2023/grasper-design-workflow.png" aria-label="Open the full-resolution grasper design figure">
+            <img src="../../assets/images/research/1-bu-morphable-biorobotics-lab/02-bu-mbl-laparoscopic-hsmr-2023/grasper-design-workflow.png" width="920" height="1365" decoding="async" fetchpriority="high" alt="Soft laparoscopic grasper workflow showing suction engagement, deployment of two soft actuators, intestinal envelopment, and the closed and deployed prototype configurations.">
+          </a>
+          <figcaption class="figure-caption">
+            The grasper enters through an 18 mm trocar, establishes an initial suction hold, and deploys two sensorized soft actuators around the intestine.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="paper-section paper-shell overview-section" aria-labelledby="overview-heading">
+        <div class="paper-text">
+          <h2 id="overview-heading">
+            Overview
+          </h2>
+          <p>
+            Rigid laparoscopic instruments can concentrate forces on fragile bowel tissue while providing limited information about tissue interaction forces. This prototype enters through an 18 mm trocar in a closed configuration and expands inside the abdominal cavity. A distal suction unit first isolates the target tissue, after which two compliant pneumatic actuators envelop the intestine to distribute the grasp over a larger contact area.
+          </p>
+        </div>
+      </section>
+
+      <section class="paper-section paper-shell" aria-labelledby="how-heading">
+        <div class="paper-text">
+          <h2 id="how-heading">
+            How It Works
+          </h2>
+          <ol class="method-stages">
+            <li>
+              <span class="stage-number" aria-hidden="true">1</span>
+              <div>
+                <h3>
+                  Engage
+                </h3>
+                <p>
+                  A distal suction unit establishes an initial hold and helps isolate the target intestinal segment from surrounding tissue.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="stage-number" aria-hidden="true">2</span>
+              <div>
+                <h3>
+                  Deploy
+                </h3>
+                <p>
+                  A miniaturized scissor-lift mechanism adjusts the separation of the two fiber-reinforced soft actuators from the closed configuration to a maximum spacing of approximately 40 mm.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="stage-number" aria-hidden="true">3</span>
+              <div>
+                <h3>
+                  Grasp and Monitor
+                </h3>
+                <p>
+                  The actuators inflate around the intestine, while integrated soft magnetometric sensors estimate three-dimensional interaction forces.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="paper-section paper-shell" aria-labelledby="results-heading">
+        <div class="paper-text">
+          <h2 id="results-heading">
+            Preliminary Results
+          </h2>
+        </div>
+        <div class="result-metrics" aria-label="Headline results">
+          <div>
+            <p class="result-metric-value">
+              500 g
+            </p>
+            <p class="result-metric-label">
+              Load supported by the grasper end effector
+            </p>
+          </div>
+          <div>
+            <p class="result-metric-value">
+              &gt;2.5 N
+            </p>
+            <p class="result-metric-label">
+              Measured actuator tip force
+            </p>
+          </div>
+          <div>
+            <p class="result-metric-value">
+              0.16 N
+            </p>
+            <p class="result-metric-label">
+              Normal-force sensor mean absolute error
+            </p>
+          </div>
+        </div>
+        <p class="results-summary">
+          Initial testing characterized actuator bending and force generation, demonstrated grasping of a weighted silicone specimen and explanted porcine intestine, and evaluated neural-network-based force estimation.
+        </p>
+
+        <figure class="project-figure results-figure">
+          <a class="figure-link" href="../../assets/images/research/1-bu-morphable-biorobotics-lab/02-bu-mbl-laparoscopic-hsmr-2023/grasper-preliminary-results.png" aria-label="Open the full-resolution preliminary results figure">
+            <img src="../../assets/images/research/1-bu-morphable-biorobotics-lab/02-bu-mbl-laparoscopic-hsmr-2023/grasper-preliminary-results.png" width="910" height="1340" loading="lazy" decoding="async" alt="Preliminary results showing soft-actuator trajectories and force, grasping of a 500 g weighted silicone specimen, retraction of porcine intestine, and measured versus predicted sensor forces.">
+          </a>
+          <figcaption class="figure-caption">
+            Preliminary validation included actuator characterization, a 500 g weighted grasp, ex vivo porcine-intestine retraction, and neural-network-based force estimation.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="paper-section paper-shell extended-work" aria-labelledby="extended-heading">
+        <div class="paper-text">
+          <h2 id="extended-heading">
+            Extended Journal Version
+          </h2>
+          <p>
+            This HSMR 2023 paper presents the initial grasper architecture and preliminary actuator, sensing, and grasping experiments. The later <em>Device</em> journal article expands the system into the MAIR platform and reports a detachable end effector, passive abdominal-wall anchoring, additional sensing validation, and broader in vitro and ex vivo experiments.
+          </p>
+          <p class="extended-link">
+            <a class="button is-normal is-rounded is-dark" href="../03-bu-mbl-laparoscopic-device-2024/index.html">View Extended Journal Project Page</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="paper-section paper-shell citation-block" id="citation" aria-labelledby="citation-heading">
+        <div class="paper-text">
+          <h2 id="citation-heading">
+            Citation
+          </h2>
+          <p class="citation-text">
+            L. Kinnicutt, J. Lee, J. Oden, L. T. Gaeta, S. K. Carroll, A. Rathi, Z. H. Lim, M. Lee, C. Orakwue, K. J. McDonald, D. Hess, and T. Ranzani. “A Soft Laparoscopic Grasper for Retraction of the Small Intestine.” <em>The 15th Hamlyn Symposium on Medical Robotics</em>, 2023, pp. 97-98.
+          </p>
+          <button class="copy-button copy-bibtex-button" type="button" data-copy-target="bibtex" data-copy-status="copy-status">Copy BibTeX</button><span id="copy-status" class="copy-status" aria-live="polite"></span>
+          <pre id="bibtex" class="bibtex-code">@inproceedings{kinnicutt2023soft,
+  author    = {Kinnicutt, L. and Lee, J. and Oden, J. and Gaeta, L. T. and Carroll, S. K. and Rathi, A. and Lim, Z. H. and Lee, M. and Orakwue, C. and McDonald, K. J. and Hess, D. and Ranzani, T.},
+  title     = {A Soft Laparoscopic Grasper for Retraction of the Small Intestine},
+  booktitle = {The 15th Hamlyn Symposium on Medical Robotics},
+  pages     = {97--98},
+  year      = {2023},
+  doi       = {10.31256/HSMR2023.51}
+}</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container publication-container">
+        <p>
+          Figures reproduced from Kinnicutt et al., <em>The 15th Hamlyn Symposium on Medical Robotics</em>, 2023.
+        </p>
+        <p class="template-credit">
+          Project-page design follows the same academic project-page system used by the Bridge and extended MAIR projects.
+        </p>
+      </div>
+    </footer>
+    <script src="../shared/paper-page.js"></script>
+  </body>
+</html>

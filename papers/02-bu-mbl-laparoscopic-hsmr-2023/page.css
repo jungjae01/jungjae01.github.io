@@ -1,0 +1,78 @@
+/* Conference-page layout only; shared academic styling comes from the Bridge project system. */
+
+.lvsm-project-page .project-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto .75rem
+}
+
+.lvsm-project-page .prototype-figure {
+  max-width: 760px
+}
+
+.lvsm-project-page .results-figure {
+  max-width: 800px
+}
+
+.lvsm-project-page .project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain
+}
+
+.lvsm-project-page .figure-link {
+  display: block
+}
+
+.lvsm-project-page .overview-section .paper-text {
+  max-width: 760px;
+  text-align: center
+}
+
+.lvsm-project-page .results-summary {
+  max-width: 760px;
+  margin: -1rem auto 2rem !important;
+  text-align: center
+}
+
+.lvsm-project-page .extended-work {
+  max-width: 860px
+}
+
+.lvsm-project-page .extended-work .paper-text {
+  max-width: 760px;
+  text-align: center
+}
+
+.lvsm-project-page .extended-link {
+  margin-top: 1.25rem !important;
+  text-align: center
+}
+
+.lvsm-project-page .featured-author {
+  font-weight: 700
+}
+
+.lvsm-project-page .project-figure figcaption {
+  max-width: 720px;
+  margin-inline: auto
+}
+
+@media (max-width: 700px) {
+  .lvsm-project-page .result-metrics {
+    grid-template-columns: 1fr
+  }
+
+  .lvsm-project-page .project-figure {
+    max-width: none
+  }
+}
+
+@media (max-width: 480px) {
+  .lvsm-project-page .project-figure figcaption {
+    font-size: .82rem;
+    line-height: 1.45
+  }
+}

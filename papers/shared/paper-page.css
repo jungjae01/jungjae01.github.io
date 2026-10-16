@@ -27,6 +27,7 @@ body {
 }
 
 /* Paper-page content width: ordinary title, abstract, text, and citation content stay within 860px for readability. */
+
 .paper-shell {
   width: 100%;
   max-width: 860px;
@@ -35,6 +36,7 @@ body {
 }
 
 /* Optional wider media container: use this only for large figures, diagrams, or videos that benefit from more room. */
+
 .media-shell {
   width: 100%;
   max-width: 1100px;
@@ -74,10 +76,29 @@ button:focus-visible {
   transform: translateY(0);
 }
 
-.paper-topbar { padding-top: 1rem; }
-.paper-topbar .paper-shell { text-align: center; }
-.paper-topbar .back-link { min-height: 0; padding: 0; border: 0; background: transparent; color: var(--muted); font-size: 0.875rem; text-decoration: none; }
-.paper-topbar .back-link:hover { border: 0; color: var(--accent-hover); text-decoration: underline; }
+.paper-topbar {
+  padding-top: 1rem;
+}
+
+.paper-topbar .paper-shell {
+  text-align: center;
+}
+
+.paper-topbar .back-link {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.paper-topbar .back-link:hover {
+  border: 0;
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
 
 .paper-hero {
   padding: 3.5rem 0 2.2rem;

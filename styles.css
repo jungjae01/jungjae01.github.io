@@ -53,6 +53,7 @@ video {
 }
 
 /* Main portfolio width constraint: match the 860px academic column used by the visual reference. */
+
 .site-shell,
 .wrapper {
   width: 100%;
@@ -388,8 +389,8 @@ h4 {
   font-size: 0.94rem;
 }
 
-
 /* Unified project list with compact, single-select skill reordering. */
+
 .project-controls {
   margin-top: 0.8rem;
 }
@@ -485,6 +486,7 @@ h4 {
   color: var(--muted);
   font-size: 0.86rem;
 }
+
 .site-footer {
   padding: 1.6rem 0 2.5rem;
   color: var(--muted);

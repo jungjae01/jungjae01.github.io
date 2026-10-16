@@ -1,4 +1,6 @@
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
 
 if (!prefersReducedMotion) {
   document.querySelectorAll("video[data-preview]").forEach((video) => {
@@ -29,11 +31,16 @@ if (projectList && projectFilters.length) {
       });
 
       const reorderedProjects = [...projects].sort((projectA, projectB) => {
-        const aMatches = selectedSkill === "all" || projectA.dataset.projectSkills.split(" ").includes(selectedSkill);
-        const bMatches = selectedSkill === "all" || projectB.dataset.projectSkills.split(" ").includes(selectedSkill);
+        const aMatches =
+          selectedSkill === "all" ||
+          projectA.dataset.projectSkills.split(" ").includes(selectedSkill);
+        const bMatches =
+          selectedSkill === "all" ||
+          projectB.dataset.projectSkills.split(" ").includes(selectedSkill);
 
         if (aMatches !== bMatches) return aMatches ? -1 : 1;
-        return Number(projectA.dataset.defaultOrder) - Number(projectB.dataset.defaultOrder);
+        return Number(projectA.dataset.defaultOrder) -
+          Number(projectB.dataset.defaultOrder);
       });
 
       projectList.replaceChildren(...reorderedProjects);
@@ -42,10 +49,17 @@ if (projectList && projectFilters.length) {
         if (selectedSkill === "all") {
           projectFilterStatus.textContent = "Newest projects first.";
         } else {
-          const matchCount = projects.filter((project) =>
-            project.dataset.projectSkills.split(" ").includes(selectedSkill)
+          const matchCount = projects.filter(
+            (project) =>
+              project.dataset.projectSkills.split(" ").includes(selectedSkill)
           ).length;
-          projectFilterStatus.textContent = matchCount + " " + selectedLabel + " project" + (matchCount === 1 ? "" : "s") + " shown first. All projects remain visible.";
+          projectFilterStatus.textContent =
+            matchCount +
+            " " +
+            selectedLabel +
+            " project" +
+            (matchCount === 1 ? "" : "s") +
+            " shown first. All projects remain visible.";
         }
       }
     });

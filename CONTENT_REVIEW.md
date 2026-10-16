@@ -19,8 +19,9 @@ This file tracks factual assumptions, unresolved links, missing assets, and info
 
 ## Project Inventory Issues
 
-- The complete inventory currently includes 22 projects: 8 featured and 14 additional.
-- Agentic Cloud Benchmark, Autonomous Robotic Arm Control, and Robot Bartender are listed as `Jan 2026 - Present` and `In Progress` in the source portfolio. Public descriptions, outcomes, repositories, and images were unavailable, so the new site uses neutral descriptions and placeholders.
+- The current project inventory includes 20 projects in the homepage project list, with one local page per project.
+- Agentic Cloud Benchmark and Robot Bartender ran from January through May 2026, as confirmed by the portfolio owner. Public technical details, outcomes, repositories, and images remain unavailable; the site retains neutral descriptions and placeholders.
+- Learning Robotics Systems with Deep Koopman Operators ran from January through May 2026 for ENG EC 523 Deep Learning. Autonomous Inventory Inspection Robot began in September 2026 for ENG EC 463 Senior Design. Both descriptions are intentionally empty until supplied.
 - Agentic Cloud Benchmark has no verified technology labels beyond the Cloud Computing course context.
 - FMUC GUI Interface has no public link in the source portfolio. The old source contains a commented-out duplicate QGIS paper link, which was not reused.
 - Portfolio Website links to the current page anchor rather than an external repository because the old source used a self-link.
@@ -54,7 +55,7 @@ This file tracks factual assumptions, unresolved links, missing assets, and info
 ## Validation Notes
 
 - Internal homepage and paper-page local `href`/`src` checks passed after the paper pages were added.
-- Duplicate project detection found 22 unique `data-project-title` values and no duplicates.
+- Duplicate project detection found 20 unique `data-project-title` values and no duplicates.
 - Responsive checks were run at 320px, 390px, 768px, 1024px, and 1440px.
 - Homepage and paper pages showed no horizontal overflow in automated Chrome checks.
 - Basic accessibility checks verified a skip link, one H1 per page, image alt text, visible focus CSS, semantic headings, and accessible copy buttons.
