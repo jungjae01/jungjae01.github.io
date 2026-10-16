@@ -8,13 +8,14 @@ Open `index.html` directly in a browser, or serve the repository root with any s
 
 ## Structure
 
-- `index.html` contains the main portfolio content in this fixed order: Introduction, Education, Research Experience, Research Papers, Projects.
+- `index.html` contains the main portfolio content in this fixed order: Introduction, Education, Research Experience, Research Projects, Research Papers, Research Posters, Projects.
 - `styles.css` defines the shared homepage layout. The main portfolio shell is capped at 860px to match the academic reference width.
 - `script.js` provides optional progressive enhancement for muted media previews.
-- `papers/shared/paper-page.css` and `papers/shared/paper-page.js` provide shared styling and behavior for all paper pages.
-- `papers/<paper-slug>/index.html` contains one static project page per research paper.
+- `papers/shared/research-page.css` and `papers/shared/research-page.js` provide one shared design system for the four publication/poster pages and the ongoing NewTen research project.
+- `papers/<paper-slug>/index.html` contains one static research page; the existing numbered publication URLs are preserved. NewTen uses `papers/05-cmu-newten-tendon-simulation/` and is labeled as an ongoing project.
 - `assets/` contains selected Jungjae-owned images, logos, and documents copied from the public source portfolio.
-- `CONTENT_REVIEW.md` lists factual assumptions, stale-looking items, and content that should be verified before long-term publication.
+- `CONTENT_REVIEW.md` lists factual assumptions and outstanding content questions.
+- `RESEARCH_PAGE_ASSET_AUDIT.md` records research-page primary sources, claims, figure/video provenance, licensing, and verification.
 
 ## Project inventory organization
 
@@ -51,13 +52,13 @@ https://jungjae01.github.io/papers/<paper-slug>/
 To add a new paper page:
 
 1. Create `papers/<paper-slug>/index.html`.
-2. Link `../shared/paper-page.css` and `../shared/paper-page.js`.
-3. Keep ordinary text in `.paper-shell` for the 860px readable width.
-4. Use `.media-shell` only for larger figures or videos, up to approximately 1100px.
+2. Link only `../shared/research-page.css` and `../shared/research-page.js`; do not import another page’s stylesheet.
+3. Use the eight-section research narrative beginning with System Overview. Keep ordinary copy in `.text-width` for a 740px readable width.
+4. Place scientific figures/videos in `.media-width` (up to 1060px), retain their aspect ratios, and provide captions and full-resolution links. Videos belong beside methods or results.
 5. Include only verified links and public information.
-6. Do not publish confidential under-review material, private repositories, private figures, or unpublished results.
+6. Use only public sources or owner-supplied materials approved for this portfolio. Distinguish ongoing project diagnostics from peer-reviewed publications, and keep private source/raw experiment records out of the site.
 7. Add a `Project Page` link from the homepage paper row to `/papers/<paper-slug>/`.
-8. Record missing authors, affiliations, abstracts, BibTeX, assets, or redistribution questions in `CONTENT_REVIEW.md`.
+8. Record source evidence, media dimensions/provenance, licensing, and missing materials in `RESEARCH_PAGE_ASSET_AUDIT.md`. Use accurate publication metadata/BibTeX for publications and project-status metadata for ongoing work.
 
 ## GitHub Pages deployment
 

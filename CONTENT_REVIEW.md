@@ -32,19 +32,16 @@ This file tracks factual assumptions, unresolved links, missing assets, and info
 - Robotics End Effector corrects the old typo "Robootics End Effector."
 - Local project images were copied only from Jungjae's prior public portfolio. Missing images use CSS placeholders instead of repeated `Unavailable.jpg` files.
 
-## Paper-Page Issues
+## Research-Page Sources and Remaining Items
 
-- Six local paper pages were created for all research-paper entries currently shown on the homepage.
-- The Advanced Intelligent Systems entry is dated October 30, 2025 in the source portfolio. Confirm final citation details, volume, issue, article number, and BibTeX.
-- The Device paper page links both ScienceDirect and a local PDF. Confirm whether the local PDF is permitted for redistribution on this GitHub Pages site.
-- The AHA vascular poster PDF is included from the source repository. Confirm whether public redistribution is acceptable.
-- Wiley, ResearchGate, LinkedIn, ScienceDirect, and some GitHub/Google links may block automated link checkers. They should be spot-checked manually in a browser if publication-link accuracy is critical.
-- The source portfolio lists "Beyond Destinations: Instruction-Aware Graph Path Planning and Navigation with OpenStreetMap" as under review without authors, venue, affiliations, abstract, figures, PDF, repository, results, or BibTeX. The local page intentionally stays minimal.
-- The ARIL page lists "REACTOR" as "Manuscript In Preparation," while the home page says "Manuscript In Progress." The new site uses "manuscript in progress." Confirm preferred wording.
-- The ARIL page title contained "Affordance-awareContextual" without a space. The new site corrects it to "Affordance-aware Contextual." Confirm the exact manuscript title.
-- REACTOR has no verified authors, affiliations, venue, abstract, figures, manuscript PDF, code, results, or BibTeX. The local page intentionally avoids confidential details.
-- Under-review and manuscript-stage pages do not expose private manuscripts, private figures, private repositories, or non-public quantitative results.
-- Published pages use citation text rather than verified BibTeX because BibTeX entries were not available in the source portfolio.
+- The four publication/poster pages and ongoing NewTen project now share one research-page system and eight-section narrative. `RESEARCH_PAGE_ASSET_AUDIT.md` is the current source, claim, media, licensing, and test record.
+- The AIS article’s final citation is *Advanced Intelligent Systems* 8(2), e202500696 (2026); its first-online date is October 30, 2025. The existing `04-...-2025` public route remains intact.
+- The 2023 proceedings PDF supplies author initials, two institutional affiliations, and a maximum reported calibration MAE of 0.16 N. These replace unsupported expanded affiliation/error descriptions in the old page.
+- The 2022 poster author list includes Sean Mori Carroll. The poster’s pressure characterization precedes the stabilizing-brace development; it does not establish closed-loop control or clinical efficacy.
+- Device figures are reproduced whole with attribution under CC BY-NC-ND 4.0; AIS figures carry CC BY 4.0 attribution. The owner-supplied poster/HSMR PDFs contain no explicit blanket reuse license, which is recorded in the asset audit.
+- NewTen is ongoing research. Supplied media show simulation diagnostics with estimated routing, CPU transmission calculations, and Newton/Warp physics. Physical friction identification and held-out hardware prediction remain outstanding. No public NewTen paper, DOI, poster PDF, or verified public code release was supplied.
+- Wiley’s supplemental ZIP could not be retrieved during verification. No unaudited journal video is embedded. The existing SRBL desktop/GUI simulation clip is excluded from paper results because it lacks a matching experimental-task record.
+- The separate ARIL under-review titles/statuses remain listed without local paper pages. Author lists and unpublished technical materials remain unavailable.
 
 ## Omitted Or De-Emphasized Content
 

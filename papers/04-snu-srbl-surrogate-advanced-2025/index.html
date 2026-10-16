@@ -3,29 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bridging High-Fidelity Simulation and Physics-Based Learning | Soft Robot Control</title>
-    <meta name="description" content="A three-domain sim-to-real framework that transfers high-fidelity FEM dynamics into an accelerated physics-based surrogate environment for reinforcement-learning control of a pneumatic soft manipulator.">
+    <title>Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control | Jungjae Lee</title>
+    <meta name="description" content="A three-domain framework connects a calibrated SOFA finite-element model, learned dynamics, and a PyBullet surrogate for reinforcement-learning control of a pneumatic soft manipulator.">
     <link rel="canonical" href="https://jungjae01.github.io/papers/04-snu-srbl-surrogate-advanced-2025/">
-    <meta property="og:title" content="Bridging High-Fidelity Simulation and Physics-Based Learning | Soft Robot Control">
-    <meta property="og:description" content="A three-domain sim-to-real framework for reinforcement-learning control of a nonlinear pneumatic soft manipulator.">
+    <meta property="og:title" content="Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control">
+    <meta property="og:description" content="A three-domain framework connects a calibrated SOFA finite-element model, learned dynamics, and a PyBullet surrogate for reinforcement-learning control of a pneumatic soft manipulator.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://jungjae01.github.io/papers/04-snu-srbl-surrogate-advanced-2025/">
+    <meta property="og:image" content="https://jungjae01.github.io/assets/research-pages/surrogate/figure-1-framework.jpg">
+    <meta property="og:image:width" content="1830">
+    <meta property="og:image:height" content="1720">
+    <meta property="og:image:alt" content="A three-domain framework connects a calibrated SOFA finite-element model, learned dynamics, and a PyBullet surrogate for reinforcement-learning control of a pneumatic soft manipulator.">
     <meta name="citation_title" content="Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control">
-    <meta name="citation_author" content="Hong, Taehwa">
-    <meta name="citation_author" content="Lee, Jungjae">
-    <meta name="citation_author" content="Song, Byung-Hyun">
-    <meta name="citation_author" content="Park, Yong-Lae">
+    <meta name="citation_author" content="Taehwa Hong">
+    <meta name="citation_author" content="Jungjae Lee">
+    <meta name="citation_author" content="Byung-Hyun Song">
+    <meta name="citation_author" content="Yong-Lae Park">
     <meta name="citation_journal_title" content="Advanced Intelligent Systems">
     <meta name="citation_publication_date" content="2026">
     <meta name="citation_online_date" content="2025/10/30">
     <meta name="citation_volume" content="8">
+    <meta name="citation_issue" content="2">
+    <meta name="citation_firstpage" content="e202500696">
     <meta name="citation_doi" content="10.1002/aisy.202500696">
-    <meta name="citation_public_url" content="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202500696">
+    <meta name="citation_public_url" content="https://doi.org/10.1002/aisy.202500696">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ScholarlyArticle",
         "headline": "Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control",
+        "description": "A three-domain framework connects a calibrated SOFA finite-element model, learned dynamics, and a PyBullet surrogate for reinforcement-learning control of a pneumatic soft manipulator.",
         "author": [
           {
             "@type": "Person",
@@ -45,312 +52,294 @@
           }
         ],
         "isPartOf": {
-          "@type": "Periodical",
-          "name": "Advanced Intelligent Systems"
+          "@type": "PublicationIssue",
+          "issueNumber": "2",
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "volumeNumber": "8",
+            "isPartOf": {
+              "@type": "Periodical",
+              "name": "Advanced Intelligent Systems"
+            }
+          }
         },
-        "volumeNumber": "8",
+        "datePublished": "2025-10-30",
         "pagination": "e202500696",
-        "datePublished": "2026",
-        "dateModified": "2025-10-30",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Wiley-VCH"
-        },
-        "license": "https://creativecommons.org/licenses/by/4.0/",
         "identifier": "https://doi.org/10.1002/aisy.202500696",
-        "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202500696",
+        "url": "https://doi.org/10.1002/aisy.202500696",
+        "mainEntityOfPage": "https://jungjae01.github.io/papers/04-snu-srbl-surrogate-advanced-2025/",
+        "image": "https://jungjae01.github.io/assets/research-pages/surrogate/figure-1-framework.jpg",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
         "codeRepository": "https://github.com/ndolphin-github/Sim2Real_framework_SoftRobot"
       }
     </script>
     <link rel="icon" href="/assets/logos/favicon.svg?v=2" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans:400,500,600,700|Castoro">
-    <link rel="stylesheet" href="../shared/paper-page.css">
-    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="../shared/research-page.css">
+    <script src="../shared/research-page.js" defer></script>
   </head>
 
-  <body class="lvsm-project-page">
+  <body class="research-page research-page--journal">
     <a class="skip-link" href="#main">Skip to main content</a>
-    <div class="project-topbar">
-      <div class="container publication-container">
-        <a class="back-home" href="../../index.html#research-papers">Back to Jungjae Lee portfolio</a>
-      </div>
-    </div>
+    <header class="research-topbar">
+      <nav class="research-nav page-width" aria-label="Research page navigation">
+        <a class="back-link" href="../../index.html#research-papers">← Back to Research</a>
+        <div class="section-links">
+          <a href="#system-overview">System</a>
+          <a href="#methodology">Method</a>
+          <a href="#results">Results</a>
+          <a href="#citation">Citation</a>
+        </div>
+      </nav>
+    </header>
 
-    <section class="hero publication-header">
-      <div class="hero-body">
-        <div class="container publication-container">
-          <h1 class="title publication-title">
-            Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control
-          </h1>
-          <!--
-          When profile URLs are available, use:
-          <a class="publication-author" href="AUTHOR_URL"
-             target="_blank" rel="noopener noreferrer">Author Name</a>
-          -->
-          <div class="publication-authors" aria-label="Authors">
-            <span class="author-block"><!-- TODO(author-link): add Taehwa Hong profile URL --><span class="publication-author author-link-pending">Taehwa Hong<sup>1</sup></span>,</span>
-            <span class="author-block"><strong class="publication-author featured-author">Jungjae Lee<sup>2</sup></strong>,</span>
-            <span class="author-block"><!-- TODO(author-link): add Byung-Hyun Song profile URL --><span class="publication-author author-link-pending">Byung-Hyun Song<sup>1</sup></span>,</span>
-            <span class="author-block"><!-- TODO(author-link): add Yong-Lae Park profile URL --><span class="publication-author author-link-pending">Yong-Lae Park<sup>1</sup>*</span></span>
-          </div>
-          <div class="publication-affiliations">
-            <span class="affiliation-block"><sup>1</sup> Department of Mechanical Engineering and Institute of Advanced Machines and Design, Seoul National University</span>
-            <span class="affiliation-block"><sup>2</sup> Department of Electrical and Computer Engineering, Boston University</span>
-            <span class="corresponding-note">* Corresponding author.</span>
-          </div>
-          <div class="publication-links" aria-label="Project resources">
-            <span class="link-block">
-              <a class="publication-link external-link button is-normal is-rounded is-dark" href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202500696" target="_blank" rel="noopener noreferrer">
-                <span class="icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M6 2h9l5 5v15H6zM15 2v6h5M9 13h8M9 17h8M9 9h2"/>
-                  </svg>
-                </span>
-                <span>Paper</span>
-              </a>
-            </span>
-            <span class="link-block">
-              <a class="publication-link external-link button is-normal is-rounded is-dark" href="https://github.com/ndolphin-github/Sim2Real_framework_SoftRobot" target="_blank" rel="noopener noreferrer">
-                <span class="icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 2a10 10 0 0 0-3.2 19.5v-2.2c-2.6.6-3.2-1.1-3.2-1.1-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.8.8.1-.7.4-1.1.6-1.3-2.1-.2-4.3-1-4.3-4.7 0-1 .4-1.9 1-2.6-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.6.6.7 1 1.6 1 2.6 0 3.7-2.2 4.5-4.3 4.7.4.3.7.9.7 1.7v3.2A10 10 0 0 0 12 2Z"/>
-                  </svg>
-                </span>
-                <span>Code &amp; Data</span>
-              </a>
-            </span>
-            <span class="link-block">
-              <a class="publication-link external-link button is-normal is-rounded is-dark" href="#citation">
-                <span class="icon">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 7H3v6h5v4H3M17 7h-4v6h5v4h-5"/>
-                  </svg>
-                </span>
-                <span>BibTeX</span>
-              </a>
-            </span>
-          </div>
-          <div class="publication-venue">
-            <strong>Advanced Intelligent Systems, 2026</strong>
-            <span>Volume 8, e202500696 &middot; Published online October 30, 2025</span>
-          </div>
-          <p class="publication-summary">
-            A sim-to-real framework that connects high-fidelity finite-element simulation to a fast physics-based surrogate through learned dynamics and cross-domain mappings.
-          </p>
+    <header class="research-masthead">
+      <div class="header-width">
+        <p class="content-type">Journal Article · 2026</p>
+        <h1>Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control</h1>
+        <p class="authors"><span>Taehwa Hong<sup>1</sup></span>, <strong>Jungjae Lee<sup>2</sup></strong>, <span>Byung-Hyun Song<sup>1</sup></span>, <span>Yong-Lae Park<sup>1</sup></span></p>
+        <p class="affiliation-summary">Seoul National University · Boston University</p>
+        <details class="affiliations">
+          <summary>Author affiliations</summary>
+          <p><sup>1</sup> Department of Mechanical Engineering, Institute of Advanced Machines and Design, Seoul National University, Seoul, Republic of Korea</p>
+          <p><sup>2</sup> Department of Electrical and Computer Engineering, Boston University, Boston, MA, USA</p>
+        </details>
+        <p class="venue"><em>Advanced Intelligent Systems</em> · 8(2), e202500696 · 2026<br>First published online <time datetime="2025-10-30">October 30, 2025</time> · <a href="https://doi.org/10.1002/aisy.202500696">DOI: 10.1002/aisy.202500696</a></p>
+        <p class="masthead-summary">This study bridges calibrated finite-element simulation and accelerated reinforcement learning through a physics-informed dynamics model and a constrained, physics-based surrogate, transferring policies to a three-bellows pneumatic manipulator and evaluating trajectory tracking, external-load response, hybrid position-force control, unseen three-dimensional motion, and recovery from a pneumatic interruption.</p>
+        <div class="resource-links" aria-label="Research resources">
+          <a class="resource-link resource-link--primary" href="https://doi.org/10.1002/aisy.202500696" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="resource-link" href="https://softrobotics.snu.ac.kr/publications/HongTH_AIS_2025.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+          <a class="resource-link" href="https://github.com/ndolphin-github/Sim2Real_framework_SoftRobot" target="_blank" rel="noopener noreferrer">Code</a>
+          <a class="resource-link" href="#citation">BibTeX</a>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="hero teaser">
-      <div class="container publication-container">
-        <figure class="paper-teaser publication-teaser">
-          <img src="assets/framework-overview.webp" width="881" height="833" alt="Framework connecting the real pneumatic soft robot, SOFA FEM simulation, physics-informed dynamics learning, PyBullet surrogate, and sim-to-real policy transfer.">
-          <figcaption class="figure-caption">
-            <span>Three-domain framework connecting real hardware, high-fidelity FEM simulation, physics-informed dynamics learning, and an accelerated surrogate environment.</span><small>Adapted from Hong et al., Figure 1, <em>Advanced Intelligent Systems</em> 8 (2026), e202500696, licensed under CC BY.</small>
+    <main id="main" tabindex="-1">
+      <section id="system-overview" class="research-section" aria-labelledby="system-overview-heading">
+        <div class="text-width">
+          <p class="section-index">01 / System</p>
+          <h2 id="system-overview-heading">System Overview</h2>
+          <p>The framework represents one pneumatic soft manipulator in three connected domains. Physical measurements calibrate a detailed finite-element model in SOFA; its deformation data support dynamics learning and the construction of a jointed surrogate in PyBullet. Reinforcement-learning policies train in the faster physics environment, then learned mappings convert their actions into physical pressure commands. The contribution is the connection between these domains, with each model serving a different role in learning and control.</p>
+        </div>
+        <figure class="research-figure media-width research-figure--compact">
+          <a class="figure-link" href="../../assets/research-pages/surrogate/figure-1-framework.jpg" aria-label="Open full-resolution Hong et al., Figure 1">
+            <img src="../../assets/research-pages/surrogate/figure-1-framework.jpg" width="1830" height="1720" fetchpriority="high" alt="Framework diagram connects a physical three-bellows soft robot, SOFA finite-element simulation, Transformer physics-informed dynamics learning, and a PyBullet jointed surrogate used for reinforcement learning.">
+          </a>
+          <figcaption>
+            Three representations of the same manipulator: real hardware, high-fidelity FEM, and a physics-based surrogate. Pressure inputs, state information, calibration, dynamics learning, and sim-to-real policy transfer connect the domains.
+            <span class="figure-credit">Source: <a href="https://doi.org/10.1002/aisy.202500696">Hong et al., Figure 1</a> · CC BY 4.0.</span>
+            <a class="figure-zoom" href="../../assets/research-pages/surrogate/figure-1-framework.jpg">Open full-resolution figure ↗</a>
           </figcaption>
         </figure>
-      </div>
-    </section>
+      </section>
 
-    <main id="main">
-      <section class="paper-section paper-shell" aria-labelledby="abstract-heading">
-        <div class="paper-text">
-          <h2 id="abstract-heading">
-            Abstract
-          </h2>
-          <p>
-            Accurate soft-robot simulation is generally too computationally expensive for reinforcement learning, while conventional rigid-body simulators cannot directly represent nonlinear soft deformation. This work connects a real pneumatic manipulator, a calibrated SOFA finite-element model, and a contact-aware PyBullet surrogate. Data generated by the FEM model are used to train a Transformer-based physics-informed dynamics model and mappings between pneumatic pressure and surrogate joint configurations.
-          </p>
-          <p>
-            The accelerated surrogate then supports reinforcement-learning policy training, followed by sim-to-real transfer through calibrated actuation mappings. Experiments evaluate trajectory tracking, force-induced deformation, hybrid position-force control, unseen three-dimensional trajectories, and recovery from pneumatic disturbances.
-          </p>
+      <section id="motivation" class="research-section" aria-labelledby="motivation-heading">
+        <div class="text-width">
+          <p class="section-index">02 / Motivation</p>
+          <h2 id="motivation-heading">Research Motivation</h2>
+          <p>Soft robots deform continuously, and their motion depends on nonlinear material behavior, geometry, actuation, and contact. A detailed finite-element model can describe those effects but makes the repeated interaction required by reinforcement learning expensive. Exploring directly on hardware creates a different bottleneck: physical experiments take time and can degrade the robot. The study asks which useful dynamics can be retained in a faster control-oriented representation.</p>
+          <p>The resulting approach combines detailed modeling, learned temporal dynamics, and an articulated physics model. Rather than running the full FEM model inside every policy-training step, it uses calibrated FEM data to inform a lower-dimensional surrogate and mappings between actuation spaces. Evaluation then checks the distinction that matters for deployment: performance inside the surrogate compared with behavior after the policy reaches the physical pneumatic robot.</p>
         </div>
       </section>
 
-      <section class="paper-section paper-shell" aria-labelledby="method-heading">
-        <div class="paper-text">
-          <h2 id="method-heading">
-            How It Works
-          </h2>
-          <ol class="method-stages">
-            <li>
-              <span class="stage-number" aria-hidden="true">1</span>
-              <div>
-                <h3>
-                  Calibrate
-                </h3>
-                <p>
-                  Real measurements and motion-capture data calibrate a high-fidelity SOFA finite-element model of the three-bellows pneumatic manipulator.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="stage-number" aria-hidden="true">2</span>
-              <div>
-                <h3>
-                  Learn and Reduce
-                </h3>
-                <p>
-                  FEM-generated data train a Transformer-based physics-informed dynamics model. FEM-derived geometry and range-of-motion constraints inform the construction of a six-link PyBullet surrogate.
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="stage-number" aria-hidden="true">3</span>
-              <div>
-                <h3>
-                  Train and Transfer
-                </h3>
-                <p>
-                  Reinforcement-learning policies are trained at high rate in the surrogate and translated into real pneumatic commands through learned cross-domain mappings.
-                </p>
-              </div>
-            </li>
-          </ol>
+      <section id="system-design" class="research-section" aria-labelledby="system-design-heading">
+        <div class="text-width">
+          <p class="section-index">03 / Design</p>
+          <h2 id="system-design-heading">System Design</h2>
         </div>
-        <div class="method-visual-grid">
-          <figure>
-            <img src="assets/dynamics-architecture.png" width="946" height="242" loading="lazy" alt="Transformer-based physics-informed dynamics architecture trained from finite-element simulation data.">
-            <figcaption class="figure-caption">
-              <span>Transformer-PINN dynamics architecture.</span><small>Adapted from Hong et al., Figure 3a, <em>Advanced Intelligent Systems</em> 8 (2026), e202500696, licensed under CC BY.</small>
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img src="assets/surrogate-construction.png" width="921" height="514" loading="lazy" alt="FEM-derived six-link PyBullet surrogate construction and joint representation.">
-            <figcaption class="figure-caption">
-              <span>FEM-derived six-link surrogate construction.</span><small>Adapted from Hong et al., Figures 4c–d, <em>Advanced Intelligent Systems</em> 8 (2026), e202500696, licensed under CC BY.</small>
-            </figcaption>
-          </figure>
+        <div class="text-width">
+          <h3>A calibrated finite-element reference</h3>
+          <p>Three independently regulated bellows connect a fixed base to a moving top plate. The SOFA model reproduces the cavity geometry and nonlinear deformation, while motion-capture measurements help align physical and simulated actuation. Proper orthogonal decomposition reduces the nodal snapshot representation, retaining important deformation modes and selected tool-center-point and boundary-contact information. This calibrated model supplies the reference data; it is not the environment used for every reinforcement-learning rollout.</p>
         </div>
-        <p class="method-caption">
-          The physics-informed dynamics model and FEM-derived six-link surrogate preserve the control-relevant behavior needed for accelerated policy learning.
-        </p>
+        <figure class="research-figure media-width">
+          <a class="figure-link" href="../../assets/research-pages/surrogate/figure-2-calibration.jpg" aria-label="Open full-resolution Hong et al., Figure 2">
+            <img src="../../assets/research-pages/surrogate/figure-2-calibration.jpg" width="1893" height="992" loading="lazy" alt="Physical bellows manipulator with load cell and optical markers, corresponding cavity and volumetric FEM meshes, configuration variables, pressure calibration, and simulation snapshot collection.">
+          </a>
+          <figcaption>
+            Physical platform and SOFA calibration: three pressure-actuated bellows, tracked configuration variables, and snapshots generated under pressure inputs and external forces. The source preserves the tool-center-point and contact-boundary information needed for downstream modeling.
+            <span class="figure-credit">Source: <a href="https://doi.org/10.1002/aisy.202500696">Hong et al., Figure 2</a> · CC BY 4.0.</span>
+            <a class="figure-zoom" href="../../assets/research-pages/surrogate/figure-2-calibration.jpg">Open full-resolution figure ↗</a>
+          </figcaption>
+        </figure>
+        <div class="text-width">
+          <h3>Temporal dynamics and actuation-space mappings</h3>
+          <p>A Transformer encoder processes recent state, pressure, and external-force information. A physics-informed neural model predicts Cartesian state velocity, with training combining a data term and a residual from the physical model. Separately, optimization and learned mappings align pressure-driven FEM configurations with joint-driven surrogate configurations. These components connect compatible states and actions across domains; the learned dynamics model and the articulated physics surrogate remain distinct parts of the pipeline.</p>
+        </div>
+        <figure class="research-figure media-width">
+          <a class="figure-link" href="../../assets/research-pages/surrogate/figure-3-dynamics-and-mapping.jpg" aria-label="Open full-resolution Hong et al., Figure 3">
+            <img src="../../assets/research-pages/surrogate/figure-3-dynamics-and-mapping.jpg" width="1978" height="1042" loading="lazy" alt="Two-panel architecture shows a temporal feature sequence entering a Transformer and physics-informed loss, followed by optimization and a learned pressure-to-joint mapping between SOFA and URDF representations.">
+          </a>
+          <figcaption>
+            The complete learning-and-mapping figure: temporal dynamics with data and physics losses (a), and optimization plus pressure/joint mapping between the SOFA and jointed representations (b). These mappings enable transfer without equating pressure commands with joint angles.
+            <span class="figure-credit">Source: <a href="https://doi.org/10.1002/aisy.202500696">Hong et al., Figure 3</a> · CC BY 4.0.</span>
+            <a class="figure-zoom" href="../../assets/research-pages/surrogate/figure-3-dynamics-and-mapping.jpg">Open full-resolution figure ↗</a>
+          </figcaption>
+        </figure>
+        <div class="text-width">
+          <h3>A six-link physics-based surrogate</h3>
+          <p>The PyBullet surrogate uses six stacked planar links, with revolute and prismatic joints allowing bending and extension. Its dimensions, joint limits, range of motion, and collision boundaries are informed by FEM geometry and deformation. This abstraction makes conventional rigid-body simulation and reinforcement-learning tools usable for the soft manipulator. It approximates the required configuration and contact behavior, while leaving distributed elastic deformation outside its explicit representation.</p>
+        </div>
+        <figure class="research-figure media-width">
+          <a class="figure-link" href="../../assets/research-pages/surrogate/figure-4-surrogate.jpg" aria-label="Open full-resolution Hong et al., Figure 4">
+            <img src="../../assets/research-pages/surrogate/figure-4-surrogate.jpg" width="1894" height="1060" loading="lazy" alt="FEM boundary nodes define layer-wise contact radii; a six-link stacked surrogate uses rotational and prismatic joints and is compared with the physical soft manipulator.">
+          </a>
+          <figcaption>
+            Boundary nodes and layer-wise radii inform the surrogate geometry. Six stacked planar links and rotational/prismatic joints approximate the manipulator’s bending and extension while preserving a FEM-informed range of motion and contact boundary.
+            <span class="figure-credit">Source: <a href="https://doi.org/10.1002/aisy.202500696">Hong et al., Figure 4</a> · CC BY 4.0.</span>
+            <a class="figure-zoom" href="../../assets/research-pages/surrogate/figure-4-surrogate.jpg">Open full-resolution figure ↗</a>
+          </figcaption>
+        </figure>
       </section>
 
-      <section class="paper-section paper-shell" aria-labelledby="results-heading">
-        <div class="paper-text">
-          <h2 id="results-heading">
-            Results
-          </h2>
-          <p>
-            Policies trained in the accelerated surrogate were transferred to the physical manipulator and evaluated on trajectory, deformation, hybrid-control, generalization, and disturbance-recovery tasks.
-          </p>
+      <section id="methodology" class="research-section" aria-labelledby="methodology-heading">
+        <div class="text-width">
+          <p class="section-index">04 / Method</p>
+          <h2 id="methodology-heading">Methodology</h2>
+          <p>The workflow separates model preparation, policy training, and physical deployment. Calibration links measured robot behavior to FEM responses; simulation then provides data for learning dynamics and actuation mappings. Policies train using the surrogate’s joint-space actions. At deployment, those actions pass through the learned mappings and pressure filtering before reaching the pneumatic regulators, while measured robot state closes the feedback loop. Evaluation preserves the distinction between surrogate and hardware outcomes.</p>
         </div>
-        <div class="result-metrics" aria-label="Headline results">
-          <div>
-            <p class="result-metric-value">
-              3.38 mm
-            </p>
-            <p class="result-metric-label">
-              Circular trajectory sim-to-real error
-            </p>
-          </div>
-          <div>
-            <p class="result-metric-value">
-              4.20 mm / 0.70 N
-            </p>
-            <p class="result-metric-label">
-              Hybrid-control position / force error
-            </p>
-          </div>
-          <div>
-            <p class="result-metric-value">
-              5.34 &plusmn; 0.38 mm
-            </p>
-            <p class="result-metric-label">
-              Unseen 3D trajectory tracking error
-            </p>
-          </div>
-        </div>
-        <div class="results-grid">
-          <article class="result-item">
-            <figure>
-              <img src="assets/trajectory-tracking.webp" width="445" height="360" loading="lazy" alt="Reference and measured circular and star-shaped trajectories in simulation and on the real robot.">
-              <figcaption class="figure-caption">
-                Adapted from Hong et al., Figure 8a, <em>Advanced Intelligent Systems</em> 8 (2026), e202500696, licensed under CC BY.
-              </figcaption>
-            </figure>
-            <h3>
-              Trajectory Tracking
-            </h3>
-            <p>
-              The transferred policy reproduced circular and star-shaped Cartesian paths on the physical manipulator, with average real-robot errors of 3.38 mm and 6.79 mm, respectively.
-            </p>
-          </article>
-
-          <article class="result-item">
-            <figure>
-              <img src="assets/hybrid-control.webp" width="742" height="228" loading="lazy" alt="Tilted elliptical path, surface-normal forces, and measured force profiles for hybrid position-force control.">
-              <figcaption class="figure-caption">
-                Adapted from Hong et al., Figures 8c–e, <em>Advanced Intelligent Systems</em> 8 (2026), e202500696, licensed under CC BY.
-              </figcaption>
-            </figure>
-            <h3>
-              Hybrid Position-Force Control
-            </h3>
-            <p>
-              The manipulator followed a tilted elliptical path while regulating surface contact force, producing real-world errors of 4.20 mm in position and 0.70 N in force.
-            </p>
-          </article>
-
-          <article class="result-item result-item-wide">
-            <figure>
-              <img src="assets/generalization-and-recovery.webp" width="799" height="492" loading="lazy" alt="Unseen nonplanar trajectory tracking and recovery following a temporary pneumatic-line disconnection.">
-              <figcaption class="figure-caption">
-                Adapted from Hong et al., Figures 9a–b, <em>Advanced Intelligent Systems</em> 8 (2026), e202500696, licensed under CC BY.
-              </figcaption>
-            </figure>
-            <h3>
-              Generalization and Recovery
-            </h3>
-            <p>
-              The learned controller generalized to an unseen nonplanar figure-eight trajectory and returned to the reference path after the pneumatic line was reconnected following a temporary disconnection.
-            </p>
-          </article>
-        </div>
-        <p class="paper-prompt">
-          See the paper for the complete method, assumptions, and quantitative evaluation.
-        </p>
+        <ol class="method-steps text-width">
+          <li>
+            <h3>Calibrate the physical and FEM models</h3>
+            <p>Use motion capture and pressure-response measurements to align SOFA with the three-bellows hardware.</p>
+          </li>
+          <li>
+            <h3>Generate simulation data</h3>
+            <p>Collect FEM snapshots under varied pressure inputs and external loading, then form a reduced representation.</p>
+          </li>
+          <li>
+            <h3>Learn dynamics and mappings</h3>
+            <p>Train the temporal physics-informed model and connect pressure actuation with the surrogate’s joint configurations.</p>
+          </li>
+          <li>
+            <h3>Train policies in the surrogate</h3>
+            <p>Optimize trajectory and force objectives in the PyBullet environment with its FEM-informed geometry and limits.</p>
+          </li>
+          <li>
+            <h3>Transfer and evaluate</h3>
+            <p>Map policy actions to real pressure commands and compare measured hardware behavior with simulated results.</p>
+          </li>
+        </ol>
       </section>
 
-      <section class="paper-section paper-shell citation-block" id="citation" aria-labelledby="citation-heading">
-        <div class="paper-text">
-          <h2 id="citation-heading">
-            Citation
-          </h2>
-          <p class="citation-text">
-            Taehwa Hong, Jungjae Lee, Byung-Hyun Song, and Yong-Lae Park. “Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control.” <em>Advanced Intelligent Systems</em> 8 (2026): e202500696. Published online October 30, 2025. <a href="https://doi.org/10.1002/aisy.202500696" target="_blank" rel="noopener noreferrer">doi:10.1002/aisy.202500696</a>.
-          </p>
-          <button class="copy-button copy-bibtex-button" type="button" data-copy-target="bibtex" data-copy-status="copy-status">Copy BibTeX</button><span id="copy-status" class="copy-status" aria-live="polite"></span>
-          <pre id="bibtex" class="bibtex-code">@article{hong2026bridging,
-  author    = {Hong, Taehwa and Lee, Jungjae and Song, Byung-Hyun and Park, Yong-Lae},
-  title     = {Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control},
-  journal   = {Advanced Intelligent Systems},
-  volume    = {8},
-  number    = {2},
-  pages     = {e202500696},
-  year      = {2026},
-  doi       = {10.1002/aisy.202500696},
-  publisher = {Wiley-VCH},
-  note      = {Published online 30 October 2025}
-}</pre>
+      <section id="experimental-setup" class="research-section" aria-labelledby="experimental-setup-heading">
+        <div class="text-width">
+          <p class="section-index">05 / Experiments</p>
+          <h2 id="experimental-setup-heading">Experimental Setup</h2>
+          <p>The physical benchmark uses three pneumatic bellows between rigid plates, optical tracking, and task-specific end-effector tooling. A load cell supports interaction measurements. The real and simulated actuation range is −20 to 35 kPa, and the surrogate uses learned joint commands corresponding to that range. Mirrored task geometry supports comparison between PyBullet and the physical robot rather than treating either output as interchangeable ground truth.</p>
+          <p>Three main tasks evaluate circular/star trajectory tracking, position response under an applied external load, and a tilted elliptical path with contact-force regulation. Additional hardware experiments test an unseen nonplanar figure-eight trajectory, a temporary pneumatic disconnection, and increasing command frequency. These are distinct evaluations: the 3D path measures generalization, the disconnection probes recovery, and the frequency sweep characterizes a physical rollout limit.</p>
+        </div>
+        <figure class="research-figure media-width">
+          <a class="figure-link" href="../../assets/research-pages/surrogate/figure-6-sim2real-setup.jpg" aria-label="Open full-resolution Hong et al., Figure 6">
+            <img src="../../assets/research-pages/surrogate/figure-6-sim2real-setup.jpg" width="2022" height="1089" loading="lazy" alt="Optical motion-capture apparatus and real manipulator, a policy-to-pressure deployment pipeline, matching simulation and physical contact configurations, and the three task arrangements.">
+          </a>
+          <figcaption>
+            Experimental platform and deployment pathway: tracked hardware (a), policy actions mapped to filtered pressure commands (b), matching contact geometry (c), and trajectory, external-load, and hybrid task arrangements (d). The tested pneumatic range was −20 to 35 kPa.
+            <span class="figure-credit">Source: <a href="https://doi.org/10.1002/aisy.202500696">Hong et al., Figure 6</a> · CC BY 4.0.</span>
+            <a class="figure-zoom" href="../../assets/research-pages/surrogate/figure-6-sim2real-setup.jpg">Open full-resolution figure ↗</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="results" class="research-section" aria-labelledby="results-heading">
+        <div class="text-width">
+          <p class="section-index">06 / Results</p>
+          <h2 id="results-heading">Evaluation &amp; Results</h2>
+          <p>The central comparison is between performance in the surrogate and performance after transfer to the real robot. Table 2 reports mean errors and standard deviations for the three main tasks. Keeping those columns separate makes the transfer gap visible: hardware tracking and force errors are larger than the corresponding simulation values, even when both executions pursue the same reference objective.</p>
+        </div>
+        <div class="text-width">
+          <h3>Trajectory tracking and hybrid interaction</h3>
+          <p>For circular tracking, the reported position error rises from 1.02 ± 0.61 mm in simulation to 3.38 ± 1.49 mm on hardware; the star path shows a larger transfer gap. The external-load task evaluates position under applied loading. In hybrid control, the robot follows a tilted ellipse while regulating contact force, with real-robot errors of 4.20 ± 1.22 mm in position and 0.70 ± 0.16 N in force.</p>
+        </div>
+        <figure class="research-figure media-width">
+          <a class="figure-link" href="../../assets/research-pages/surrogate/figure-8-control-results.png" aria-label="Open full-resolution Hong et al., Figure 8">
+            <img src="../../assets/research-pages/surrogate/figure-8-control-results.png" width="1523" height="1253" loading="lazy" alt="Published task results compare reference, simulated, and real circle/star paths; position under external loading; a tilted elliptical contact trajectory; normal-force vectors; and force components over time with shaded variability.">
+          </a>
+          <figcaption>
+            Main-task evidence: reference, surrogate, and real-robot trajectories (a); externally loaded configurations (b); and hybrid trajectory/contact behavior (c–e). Position axes are in metres; force components are in newtons over seconds, with the source’s shaded standard-deviation bands retained.
+            <span class="figure-credit">Source: <a href="https://doi.org/10.1002/aisy.202500696">Hong et al., Figure 8</a> · CC BY 4.0.</span>
+            <a class="figure-zoom" href="../../assets/research-pages/surrogate/figure-8-control-results.png">Open full-resolution figure ↗</a>
+          </figcaption>
+        </figure>
+        <div class="table-wrap text-width" role="region" aria-label="Simulation and real-robot task errors" tabindex="0">
+          <table>
+            <caption>Task implementation errors · mean ± standard deviation · source Table 2</caption>
+            <thead>
+              <tr><th scope="col">Task / quantity</th><th scope="col">Simulation</th><th scope="col">Real robot</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Circle · position (mm)</th><td>1.02 ± 0.61</td><td>3.38 ± 1.49</td></tr>
+              <tr><th scope="row">Star · position (mm)</th><td>1.24 ± 0.50</td><td>6.79 ± 1.56</td></tr>
+              <tr><th scope="row">External load · position (mm)</th><td>3.20 ± 0.52</td><td>4.68 ± 1.77</td></tr>
+              <tr><th scope="row">Hybrid · position (mm)</th><td>1.35 ± 0.43</td><td>4.20 ± 1.22</td></tr>
+              <tr><th scope="row">Hybrid · force (N)</th><td>0.55 ± 0.19</td><td>0.70 ± 0.16</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-width">
+          <h3>Generalization, recovery, and hardware bandwidth</h3>
+          <p>An unseen nonplanar figure-eight trajectory produced a real-robot average tracking error of 5.34 ± 0.38 mm. In a separate circular-tracking experiment, one pneumatic line was disconnected for five seconds; the robot returned to the reference path within about five seconds after reconnection. A further point-to-point frequency sweep showed sharply increased hardware tracking error above approximately 2 Hz. That bandwidth limit concerns the pneumatic system, rather than the simulator or policy-inference rate.</p>
+        </div>
+        <figure class="research-figure media-width">
+          <a class="figure-link" href="../../assets/research-pages/surrogate/figure-9-generalization-robustness.jpg" aria-label="Open full-resolution Hong et al., Figure 9">
+            <img src="../../assets/research-pages/surrogate/figure-9-generalization-robustness.jpg" width="1643" height="1490" loading="lazy" alt="Three rows show unseen 3D figure-eight tracking, trajectory deviation and recovery during pneumatic-line disconnection, and a point-to-point command-frequency sweep with mean position error and standard-deviation bars.">
+          </a>
+          <figcaption>
+            Separate hardware evaluations: unseen 3D path (a), temporary pneumatic interruption and recovery (b), and command-frequency sweep (c). The lower-right plot shows mean position error (m) with standard-deviation bars versus input frequency (Hz); it measures hardware tracking bandwidth.
+            <span class="figure-credit">Source: <a href="https://doi.org/10.1002/aisy.202500696">Hong et al., Figure 9</a> · CC BY 4.0.</span>
+            <a class="figure-zoom" href="../../assets/research-pages/surrogate/figure-9-generalization-robustness.jpg">Open full-resolution figure ↗</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="discussion" class="research-section" aria-labelledby="discussion-heading">
+        <div class="text-width">
+          <p class="section-index">07 / Discussion</p>
+          <h2 id="discussion-heading">Discussion &amp; Limitations</h2>
+          <p>The experiments show that policies trained with the physics-based surrogate can transfer to this pneumatic platform for the evaluated motion and contact tasks. They also expose the remaining gap: physical errors exceed surrogate errors, with unmodeled hysteresis, material friction, and actuation latency contributing to discrepancies. The linked surrogate does not explicitly reproduce distributed elastic compliance, and a deterministic inverse mapping may be sensitive to uncertain loading or sensor noise.</p>
+          <p>The approximately 2 Hz hardware bottleneck is especially relevant to interpreting “fast” simulation. Faster training or policy inference does not remove pneumatic response limits, and the paper does not establish unrestricted high-speed physical control. Extending contact fidelity, testing broader loading conditions, and applying the framework to other soft-robot architectures remain directions for further work. The reported generalization and recovery results should be read within the specific tasks and disturbances tested.</p>
+        </div>
+      </section>
+
+      <section id="citation" class="research-section" aria-labelledby="citation-heading">
+        <div class="text-width">
+          <p class="section-index">08 / Resources</p>
+          <h2 id="citation-heading">Resources &amp; Citation</h2>
+          <p>T. Hong, J. Lee, B.-H. Song, and Y.-L. Park. “Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control.” <em>Advanced Intelligent Systems</em> 8(2), e202500696 (2026). First published online October 30, 2025. <a href="https://doi.org/10.1002/aisy.202500696">doi:10.1002/aisy.202500696</a>.</p>
+        </div>
+        <div class="citation-box text-width">
+          <div class="citation-toolbar">
+            <button class="copy-button" type="button" data-copy-target="bibtex" data-copy-status="copy-status">Copy BibTeX</button>
+            <span id="copy-status" class="copy-status" role="status" aria-live="polite"></span>
+          </div>
+          <pre id="bibtex" tabindex="0"><code>@article{hong2026bridging,
+    author = {Hong, Taehwa and Lee, Jungjae and Song, Byung-Hyun and Park, Yong-Lae},
+    title = {Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control},
+    journal = {Advanced Intelligent Systems},
+    year = {2026},
+    volume = {8},
+    number = {2},
+    pages = {e202500696},
+    doi = {10.1002/aisy.202500696},
+    url = {https://doi.org/10.1002/aisy.202500696}
+  }</code></pre>
+        </div>
+        <div class="text-width">
+          <ul class="source-list">
+            <li><a href="https://doi.org/10.1002/aisy.202500696">Publisher article and supporting information</a></li>
+            <li><a href="https://softrobotics.snu.ac.kr/publications/HongTH_AIS_2025.pdf">Author-hosted publisher PDF</a></li>
+            <li><a href="https://github.com/ndolphin-github/Sim2Real_framework_SoftRobot">Maintained code and data repository</a></li>
+            <li><a href="https://github.com/SNU-SRBL/SoftRobot_sim2real">Original paper repository, which directs readers to the maintained version</a></li>
+          </ul>
+          <p>Complete figures are reproduced from Hong et al., <em>Advanced Intelligent Systems</em>, 8, e202500696 (2026; first online 2025), under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. No figure panels, labels, axes, or data have been altered.</p>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="container publication-container">
-        <p>
-          Publication figures are adapted from Hong et al., <em>Advanced Intelligent Systems</em>, 2026, e202500696, under CC BY.
-        </p>
-        <p class="template-credit">
-          Project-page design adapted from the <a href="https://haian-jin.github.io/projects/LVSM/" target="_blank" rel="noopener noreferrer">LVSM</a> and <a href="https://nerfies.github.io/" target="_blank" rel="noopener noreferrer">Nerfies</a> academic project-page templates.
-        </p>
+    <footer class="research-footer">
+      <div class="page-width">
+        <a href="../../index.html#research-papers">Jungjae Lee · Research</a>
+        <p>Research summary and complete, attributed figures from Hong et al., <em>Advanced Intelligent Systems</em>, 2026.</p>
       </div>
     </footer>
-    <script src="../shared/paper-page.js"></script>
   </body>
 </html>
