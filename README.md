@@ -8,12 +8,12 @@ Open `index.html` directly in a browser, or serve the repository root with any s
 
 ## Structure
 
-- `index.html` contains the main portfolio content in this fixed order: Introduction, Education, Research Experience, Research Projects, Research Papers, Research Posters, Projects.
+- `index.html` contains the main portfolio content in this fixed order: Introduction, Education, Research Experience, Research Papers, Research Posters, Projects.
 - `styles.css` defines the shared homepage layout. The main portfolio shell is capped at 860px to match the academic reference width.
 - `script.js` provides optional progressive enhancement for muted media previews.
 - `papers/shared/research-page.css` and `papers/shared/research-page.js` provide one shared design system for the four publication/poster pages and the ongoing NewTen research project.
-- `papers/<paper-slug>/index.html` contains one static research page; the existing numbered publication URLs are preserved. NewTen uses `papers/05-cmu-newten-tendon-simulation/` and is labeled as an ongoing project.
-- `assets/` contains selected Jungjae-owned images, logos, and documents copied from the public source portfolio.
+- `papers/<paper-slug>/index.html` contains one static research page; the existing numbered publication URLs are preserved. NewTen uses `papers/05-cmu-ri-newten-urop-2026/`, appears under Research Posters, and is labeled as a 2026 research poster presented at Boston University’s 29th Undergraduate Research Symposium. Its earlier route redirects to this page.
+- `assets/` contains selected Jungjae-owned images, logos, and documents, including the supplied NewTen poster at `assets/documents/cmu-urop-poster.pdf`. Research images and videos live under `assets/images/research/`; the empty `assets/media/` directory has been removed.
 - `CONTENT_REVIEW.md` lists factual assumptions and outstanding content questions.
 - `RESEARCH_PAGE_ASSET_AUDIT.md` records research-page primary sources, claims, figure/video provenance, licensing, and verification.
 

@@ -10,7 +10,7 @@ Reviewed October 16, 2026. Scope: the four existing research publication/poster 
 | `02-bu-mbl-laparoscopic-hsmr-2023/` | *A Soft Laparoscopic Grasper for Retraction of the Small Intestine*, HSMR 2023, pp. 97–98; DOI 10.31256/HSMR2023.51 | [Supplied two-page proceedings paper](assets/documents/mbl-laparoscopy-paper.pdf), visually read because the PDF is raster-only; [official proceedings](https://www.hamlynsymposium.org/wp-content/uploads/2023/07/HSMR23-Proceedings-Final.pdf). |
 | `03-bu-mbl-laparoscopic-device-2024/` | *A Soft Robotic, Modular Laparoscopic Grasper for Atraumatic Retraction of the Small Intestine*, *Device* 2(10), 100560; October 18, 2024 | [Publisher / DOI](https://doi.org/10.1016/j.device.2024.100560), [full peer-reviewed article](https://pmc.ncbi.nlm.nih.gov/articles/PMC12309402/), and [primary full-text XML](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12309402/fullTextXML). ScienceDirect blocked automated access; the complete article XML and figures were accessible through NCBI/Europe PMC. |
 | `04-snu-srbl-surrogate-advanced-2025/` | *Bridging High-Fidelity Simulations and Physics-Based Learning using a Surrogate Model for Soft Robot Control*, *Advanced Intelligent Systems* 8(2), e202500696 (2026); first online October 30, 2025 | [Wiley full article](https://doi.org/10.1002/aisy.202500696), [author-hosted publisher PDF](https://softrobotics.snu.ac.kr/publications/HongTH_AIS_2025.pdf), [original code/data record](https://github.com/SNU-SRBL/SoftRobot_sim2real), and its README-linked [maintained repository](https://github.com/ndolphin-github/Sim2Real_framework_SoftRobot). The existing route's `2025` suffix is retained. |
-| `05-cmu-newten-tendon-simulation/` | *NewTen: Friction-Aware Tendon Transmission for GPU-Accelerated Dexterous Hand Simulation*; research project, ongoing | Owner-supplied portfolio assets in `assets/images/research/5-cmu-robotics-institute/`, existing CMU experience page, and read-only checks against matching project media manifests, reproduction records, and implementation notes. No private source, raw telemetry, calibration footage, or credentials are copied into the site. |
+| `05-cmu-ri-newten-urop-2026/` | *NewTen: Friction-Aware Tendon Transmission for GPU-Accelerated Dexterous Hand Simulation*; research poster and ongoing project | [Supplied UROP poster](assets/documents/cmu-urop-poster.pdf), owner-supplied portfolio assets in `assets/images/research/5-cmu-robotics-institute/`, existing CMU experience page, and read-only checks against matching project media manifests, reproduction records, and implementation notes. No private source, raw telemetry, calibration footage, or credentials are copied into the site. |
 
 The [A-SLIP reference](https://a-slip.github.io/) was inspected as a live page, including its mobile layout. Its research-story hierarchy informed the presentation. Its source, graphics, videos, branding, frameworks, and decorative treatments are not included in this repository.
 
@@ -50,6 +50,7 @@ The [A-SLIP reference](https://a-slip.github.io/) was inspected as a live page, 
 
 ### NewTen research project
 
+- The subsequently supplied UROP poster confirms author order: Jungjae Lee, Uksang Yoo, Jean Oh, Jeffrey Ichnowski. Its affiliations map Lee to BU/CMU, Yoo to CMU/UC Berkeley, and Oh and Ichnowski to CMU. The homepage uses the owner-requested abbreviated author line, with J. Lee bold. PDF metadata identifies Boston University UROP Symposium 2026; neither acceptance nor completed presentation is inferred.
 - The masthead, homepage section, metadata, captions, and final status section consistently identify ongoing research. Schema metadata uses `CreativeWork`; no journal, DOI, acceptance claim, or fabricated BibTeX is supplied.
 - The architecture explicitly separates **CPU transmission calculations** from Newton/Warp physics. A future all-GPU transmission implementation or benchmarked speedup is not claimed.
 - The selected ORCA comparison uses estimated routes, including an estimated index flexor. It does not establish measured tendon geometry, full-hand route acceptance, physical friction identification, hardware prediction accuracy, or policy-transfer gains.
@@ -63,7 +64,7 @@ The [A-SLIP reference](https://a-slip.github.io/) was inspected as a live page, 
 - **Device:** complete source figures are reproduced without relabeling, cropping, or remixes, with linked article credits and [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). New downloads are byte copies of source figure JPEGs. Existing source figures remain unchanged.
 - **AIS:** complete original embedded figures were extracted from the author-hosted publisher PDF with `pdfimages`, retaining source panels, labels, units, legends, and encoding. Credits link to the article and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). No numerical curves were redrawn or guessed from images.
 - **Poster/HSMR:** these are owner-supplied, coauthored PDFs and existing figure exports. Neither PDF supplies an explicit Creative Commons grant. The pages identify their sources without inventing a reuse license. The one new fabrication export retains the complete original poster figure. Broader third-party reuse permission is not established by this audit.
-- **NewTen:** supplied project assets are used as requested by the owner. Only a first-frame video poster is derived; the original video and all original media remain intact. Private project records were used for verification, not published as resources.
+- **NewTen:** supplied project assets and the coauthored UROP poster PDF are used as requested by the owner. The poster contains no explicit Creative Commons grant, so no reuse license is invented. Only a first-frame video poster is derived; the original PDF, videos, and all original media remain intact. Private project records were used for verification, not published as resources.
 
 ## Media inspection and deliberate omissions
 
@@ -79,7 +80,7 @@ All 15 supplied NewTen assets were inspected: every PNG, metadata and representa
 | `srbl-project2.mp4` | H.264, 2560×1440, 30 fps, 30.634 s, silent | GUI/SOFA desktop recording inspected at representative early/middle/late frames. Excluded from the journal's results because it lacks a matching source-task/hardware record. It remains used by the existing lab page. |
 | Wiley supplement | Publisher lists an 89.9 MB ZIP; automated download returned 403 | No uninspected supplemental video or broken download control is embedded. Static complete article figures carry the evidence. |
 
-No corresponding vascular/HSMR demonstration videos, public NewTen poster PDF, verified public NewTen code release, approved hardware-validation footage, or additional numerical hardware data were supplied. These are omitted; no placeholder media controls, synthetic plots, or invented publication resources fill the gaps.
+The NewTen UROP poster PDF was subsequently supplied and is linked from both the homepage and research page. No corresponding vascular/HSMR demonstration videos, verified public NewTen code release, approved hardware-validation footage, or additional numerical hardware data were supplied. These are omitted; no placeholder media controls, synthetic plots, or invented publication resources fill the gaps.
 
 Verified external platform references are credited as tools, not as NewTen source-code releases: [Newton](https://github.com/newton-physics/newton), [Warp](https://github.com/NVIDIA/warp), and [ORCA robot description](https://github.com/orcahand/orcahand_description).
 
@@ -129,14 +130,14 @@ The four existing page routes are preserved. All five pages share the same schol
 | Change | Files |
 | --- | --- |
 | Rebuilt existing pages | `papers/01-bu-mbl-vascular-ress-2022/index.html`; `papers/02-bu-mbl-laparoscopic-hsmr-2023/index.html`; `papers/03-bu-mbl-laparoscopic-device-2024/index.html`; `papers/04-snu-srbl-surrogate-advanced-2025/index.html` |
-| Added ongoing research page | `papers/05-cmu-newten-tendon-simulation/index.html` |
+| Added ongoing research page | `papers/05-cmu-ri-newten-urop-2026/index.html` |
 | Added shared presentation and progressive enhancement | `papers/shared/research-page.css`; `papers/shared/research-page.js` |
 | Updated discovery links and metadata | `index.html`; `labs/5-cmu-robotics-institute/index.html`; `labs/3-snu-soft-robotics-bionics-lab/index.html` |
 | Added source-faithful media | The 13 new files under `assets/research-pages/`, individually identified in the inventory above: one vascular figure, four Device figures, seven AIS figures, and one NewTen video poster |
 | Updated documentation | `README.md`; `CONTENT_REVIEW.md`; this audit |
 | Removed superseded, unreferenced presentation files | `papers/shared/paper-page.css`; `papers/shared/paper-page.js`; the former `page.css` in the 2023 HSMR, 2024 Device, and surrogate-model page directories |
 
-The homepage now exposes NewTen in Research Projects and links it from the CMU research experience. Existing unrelated homepage content and all 20 course/project entries are preserved. No production dependency or build configuration was introduced. Earlier directory-renaming work was retained.
+The homepage now exposes NewTen in Research Posters and links it from the CMU research experience. The former standalone Research Projects section and its navigation item have been removed. Existing unrelated homepage content and all 20 course/project entries are preserved. No production dependency or build configuration was introduced. Earlier directory-renaming work was retained.
 
 ### Verification results
 
@@ -150,7 +151,7 @@ Final checks completed October 16, 2026. Browser checks used Chromium 156 with d
 | Citation copying | All four publication/poster citations copied their exact BibTeX through the browser's native clipboard API in an isolated browser context. Simulated clipboard denial also selected the citation and announced the manual-copy fallback. |
 | Video behavior | Both embedded NewTen MP4s decoded and played with native controls, correct dimensions, and no autoplay or looping. Silent-video descriptions and source conditions remain readable beside the media. |
 | JavaScript disabled | **Five passed:** narratives, figures, links, resources, affiliations, and citations remain available. |
-| Homepage regression checks | **Seven widths passed:** no document overflow; Research Projects and the ongoing NewTen link are present; all 20 existing course/project cards remain. |
+| Homepage regression checks | **Seven widths passed in the original redesign:** no document overflow; the ongoing NewTen link and all 20 existing course/project cards were present. The subsequent poster-placement checks are recorded below. |
 | Local links and fragments | **442 references across 31 HTML files checked:** no missing local files or fragment targets. Reciprocal conference/journal links and homepage/lab/project links resolve. |
 | Static structure and metadata | Every page has one H1, the required eight section IDs, the shared CSS/JS, a static System Overview figure, and source-appropriate publication or project metadata. |
 | Media integrity | All pre-existing source PDFs and media retain their starting hashes. The 30 selected media files match the dimensions, sizes, and SHA-256 values recorded above. |
@@ -158,4 +159,61 @@ Final checks completed October 16, 2026. Browser checks used Chromium 156 with d
 
 Full-page and masthead screenshots at 390 and 1440 pixels were inspected for all five pages. Dense scientific panels retain their original aspect ratios and provide original-resolution links; accompanying prose and result tables supply readable conditions and values on narrow screens.
 
-The unavailable materials remain those recorded above: the publisher-blocked Wiley supplement, matching vascular/HSMR videos, and an approved public NewTen poster, code release, or hardware-validation dataset. Their absence is represented directly in the pages; no results, media, or publication records were fabricated.
+The unavailable materials remain those recorded above: the publisher-blocked Wiley supplement, matching vascular/HSMR videos, and a verified NewTen code release or hardware-validation dataset. Their absence is represented directly in the pages; no results, media, or publication records were fabricated.
+
+### NewTen poster and route update
+
+At the owner's request, the NewTen page now lives at `papers/05-cmu-ri-newten-urop-2026/`. All active navigation, lab links, canonical URLs, and Open Graph/structured metadata use that route. The earlier public route contains only a compatibility redirect, preserving query strings and section fragments when JavaScript is available, with a static refresh and visible link as fallbacks. Research resources now link the supplied poster; ongoing research and simulation-only claim boundaries remain explicit.
+
+The empty, unreferenced `assets/media/` directory was removed. Research images and videos retain their existing locations and bytes.
+
+| Added source | Integrity record |
+| --- | --- |
+| [NewTen UROP poster](assets/documents/cmu-urop-poster.pdf) | One page, 2949.84 × 1658.88 PDF points; 1,041,519 bytes; SHA-256 `ffa90a21a44d50d739e444f338aed6053ffcdd660a6123575687d3c06a69a807` |
+
+Follow-up verification completed October 16, 2026:
+
+- **14 responsive Chromium checks passed:** the homepage and renamed NewTen page at 320, 375, 390, 768, 1024, 1280, and 1440 CSS pixels. No overflow, image-decoding failures, JavaScript errors, or failed local requests. Desktop/mobile screenshots confirm readable authors, affiliations, and poster links.
+- **Four automated accessibility checks passed:** homepage and NewTen at 390 and 1440 pixels, with zero axe WCAG 2 A/AA or WCAG 2.1 AA violations.
+- **Three compatibility checks passed:** both old directory and `index.html` URLs redirect correctly with query strings and section fragments; the old directory also redirects with JavaScript disabled. The new eight-section page and PDF resource remain available without JavaScript.
+- The poster download returned **HTTP 200**, `application/pdf`, and the exact 1,041,519-byte source hash above.
+- An independent static audit checked **447 local references across 32 HTML files**, including the compatibility stub, with no missing targets or fragments. All five research narratives, shared imports, scientific figures, and page metadata remain valid.
+- All **68 pre-existing asset files**, including the supplied poster, retain their starting hashes. Unrelated homepage sections, all 20 course/project cards, the original vascular-poster entry, and NewTen's seven scientific narrative sections are unchanged. `git diff --check` passed.
+
+
+## Research-page visual refinement — October 2026
+
+- The five canonical research pages retain their eight ordered section IDs and existing URLs. NewTen remains at `papers/05-cmu-ri-newten-urop-2026/`; the older tendon-simulation URL remains a redirect. Its owner-confirmed 2026 symposium presentation and author affiliations are preserved. Shared white / `#F5F9FD` bands target the stable Motivation, Methodology, Results and Resources section IDs; the homepage and publication content are unchanged.
+- NewTen keeps the architecture as its first visualization. Implemented-component text follows the poster's Simulation Framework and existing project architecture: stateful transmission, moment-arm torque projection into Newton, and matched-command simulation analysis. The demonstrated transmission calculations are CPU-side; Newton/Warp physics is GPU-accelerated. No personal contribution beyond the project record is inferred.
+
+### Poster used for the compact Results table
+
+`assets/documents/cmu-urop-poster.pdf`, one page, titled *NewTen: Friction-Aware Tendon Transmission for GPU-Accelerated Dexterous Hand Simulation*. This is the only full CMU/NewTen research poster discovered in the current local assets. The other PDFs concern BU vascular and laparoscopic research; the NewTen video-poster PNG is a single simulation frame. PDF creation/modification metadata: October 16, 2026. The entire poster was read as extracted text and a raster rendering before constructing the table. SHA-256: `ffa90a21a44d50d739e444f338aed6053ffcdd660a6123575687d3c06a69a807`.
+
+| Web row | Exact poster source | Verified scope |
+| --- | --- | --- |
+| Index PIP angle [deg]: 41.37 / 31.15; 10.22° less flexion | Page 1, Results: Quantitative Comparison, literal “Values at t = 7 s” table plus immediately preceding bullet | ORCA simulation, μ = 0 / 0.25, t = 7 s, identical 420 N index-flexor command. The web values retain the poster's printed precision. |
+| Modeled transmitted tension [N]: 420.00 / 299.04; 28.8% lower | Same literal table and preceding bullet | Same experiment and selected time; modeled tendon transmission, not physical tendon force or finger–ball contact force. |
+| Loading/release: ideal transmission / distinct branches; model-generated hysteresis | Same section's index-flexor plot and first bullet, plus Summary | Qualitative observation across loading/release, not an additional t = 7 s measurement. The caption explicitly distinguishes this row from the selected-time values. |
+
+The three-row web table is a compilation: two numeric rows reproduce the literal poster table, while the third summarizes its adjacent figure. Conditions from the poster are retained: constant estimated moment arms and uncalibrated transmission parameters. No older high-friction or other simulation campaign is mixed into these results. The current poster reports no numerical implementation-error measurements, physical measurements, held-out hardware accuracy, speedup, throughput or measured computational overhead. Its Future Development section proposes physical data collection, independent calibration of NewTen and a frictionless baseline using the same dataset, held-out prediction comparisons, and overhead measurement; these remain future work.
+
+### Readable plot display exports
+
+- Original full-resolution poster PNGs remain unchanged and linked from both figures. Their hashes match the corresponding preserved poster-asset source plots. Desktop and mobile display exports are added under `assets/research-pages/newten/index-{pip-motion,flexor-loading-release}-web[-mobile].png`.
+- Display exports use the same 6,001 saved time/angle/command/transmission samples per case. All plotted x/y arrays were checked exactly against those records. Axis ranges, orange solid / pink dashed curves, ideal reference, chronological path, direction arrows, units and exact t = 7 s markers are preserved. No simulation, interpolation, sorting, smoothing or path simplification is performed.
+- All four exports retain 3000 × 1880 dimensions. Desktop labels use 16 pt ticks/legend and 18 pt axes; mobile uses 24 pt labels, wrapped long labels, fewer tick annotations and slightly thicker strokes. Legends move above the axes and do not cover curve samples. Text bounding boxes fit the canvas. The HTML supplies the figure titles.
+- Paired plots stack at 1000 CSS pixels and below. The 1024-pixel layout gives each plot about 476 pixels: desktop labels are at least 14.1 CSS pixels. A mobile `picture` source at 600 pixels and below keeps labels at least 12.44 pixels even in a 280-pixel plot. Native-size previews were visually inspected. Full-resolution click targets remain the original poster PNGs.
+- Private source arrays and project code are used only to verify/re-export the already approved poster figures; they are not copied into the portfolio or linked as public resources. The reproduction renderer and detailed array checks remain in the task's temporary work directory.
+
+### Refinement validation
+
+Chromium validation of the staged site completed October 16, 2026: **858 checks passed, zero failures**. All five pages were inspected at 1440, 1024, 768, 390 and 320 CSS pixels (25 responsive cases). Additional checks verified the plot-column transition at 1000/1001 pixels and mobile image selection at 600/601 pixels.
+
+- All eight bands alternate white / `#F5F9FD`, meet at their edges and span the viewport. Section hierarchy, typography, spacing and centered containers are consistent across the five pages; no horizontal document overflow was found.
+- Both NewTen videos decode and advance under manual playback. Images, captions, local links, fragment targets, full-resolution links and responsive image sources resolve without local HTTP or runtime errors.
+- Ten axe WCAG A/AA runs reported no violations. Keyboard operation and visible focus work for the native affiliation and technical disclosures. Results-table captions, headers, numerical strings and units were checked.
+- Desktop, tablet and mobile screenshots were reviewed for the paired/stacked plots, labels, legends, captions, table and section bands. Visible NewTen text is reduced by approximately 45%; supporting model and provenance details remain in native disclosures.
+- Source hashes confirm that the homepage, other four research-page HTML files, shared JavaScript, canonical/redirect URLs and all original assets are unchanged by this refinement. Only the shared CSS and NewTen HTML change, alongside four new plot display exports and this audit appendix.
+
+The checks use Chromium viewport emulation, not physical-device or cross-browser testing. Temporary QA reports, screenshots and the plot reproduction renderer remain outside the portfolio repository.

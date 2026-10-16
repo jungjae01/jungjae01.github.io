@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
   --paper-bg: #ffffff;
+  --paper-section-alt: #f5f9fd;
   --paper-text: #17212b;
   --paper-heading: #111827;
   --paper-secondary: #4c5a68;
@@ -313,12 +314,14 @@ sup {
 }
 
 .research-section {
-  padding-block: 2.75rem;
+  padding-block: clamp(3.5rem, 5vw, 4.5rem);
+  background: var(--paper-bg);
   scroll-margin-top: 1.5rem;
 }
 
-.research-section:first-child {
-  padding-top: 1.75rem;
+/* Shared section IDs keep the eight-section band pattern stable on every page. */
+main > .research-section:is(#motivation, #methodology, #results, #citation) {
+  background: var(--paper-section-alt);
 }
 
 .research-section .text-width > p:last-child {
@@ -382,6 +385,38 @@ sup {
 
 .media-pair .research-figure {
   margin: 0;
+}
+
+/* Equal original plot dimensions preserve aligned canvases at equal widths. */
+.media-pair .figure-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.newten-plot-pair .research-figure figcaption {
+  margin: 0.75rem 0 0;
+}
+
+.research-details {
+  margin-block: 1.5rem 0;
+  color: var(--paper-secondary);
+  font-size: 0.9375rem;
+}
+
+.research-details summary {
+  padding-block: 0.35rem;
+  color: var(--paper-heading);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.research-details[open] summary {
+  margin-bottom: 0.65rem;
+}
+
+.research-details > :last-child {
+  margin-bottom: 0;
 }
 
 .method-steps {
@@ -545,6 +580,12 @@ code {
   margin: 0.65rem 0 0;
 }
 
+@media (max-width: 1000px) {
+  .newten-plot-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .research-nav {
     flex-wrap: wrap;
@@ -564,7 +605,7 @@ code {
   }
 
   .research-section {
-    padding-block: 2rem;
+    padding-block: clamp(2.25rem, 6vw, 3.25rem);
   }
 
   .media-pair {

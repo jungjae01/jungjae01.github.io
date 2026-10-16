@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewTen: Friction-Aware Tendon Transmission | Jungjae Lee</title>
+    <meta name="description" content="NewTen research poster presented at the 29th Undergraduate Research Symposium, Boston University, Boston, MA, in 2026, studying friction-aware tendon transmission in robotic-hand simulation.">
+    <link rel="canonical" href="https://jungjae01.github.io/papers/05-cmu-ri-newten-urop-2026/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="NewTen: Friction-Aware Tendon Transmission for GPU-Accelerated Dexterous Hand Simulation">
+    <meta property="og:description" content="NewTen research poster presented at the 29th Undergraduate Research Symposium, Boston University, Boston, MA, in 2026, studying friction-aware tendon transmission in robotic-hand simulation.">
+    <meta property="og:url" content="https://jungjae01.github.io/papers/05-cmu-ri-newten-urop-2026/">
+    <meta property="og:image" content="https://jungjae01.github.io/assets/images/research/5-cmu-robotics-institute/newten_architecture.png">
+    <meta property="og:image:width" content="4008">
+    <meta property="og:image:height" content="2774">
+    <meta name="citation_title" content="NewTen: Friction-Aware Tendon Transmission for GPU-Accelerated Dexterous Hand Simulation">
+    <meta name="citation_author" content="Jungjae Lee">
+    <meta name="citation_author" content="Uksang Yoo">
+    <meta name="citation_author" content="Jean Oh">
+    <meta name="citation_author" content="Jeffrey Ichnowski">
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_conference_title" content="29th Undergraduate Research Symposium">
+    <meta name="citation_pdf_url" content="https://jungjae01.github.io/assets/documents/cmu-urop-poster.pdf">
+    <link rel="icon" href="/assets/logos/favicon.svg?v=2" type="image/svg+xml">
+    <link rel="stylesheet" href="../shared/research-page.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "NewTen: Friction-Aware Tendon Transmission for GPU-Accelerated Dexterous Hand Simulation",
+        "description": "NewTen research poster presented at the 29th Undergraduate Research Symposium, Boston University, Boston, MA, in 2026, studying friction-aware tendon transmission in robotic-hand simulation.",
+        "url": "https://jungjae01.github.io/papers/05-cmu-ri-newten-urop-2026/",
+        "image": "https://jungjae01.github.io/assets/images/research/5-cmu-robotics-institute/newten_architecture.png",
+        "genre": "Research poster",
+        "datePublished": "2026",
+        "creativeWorkStatus": "Presented",
+        "isPartOf": {
+          "@type": "CreativeWork",
+          "name": "29th Undergraduate Research Symposium, Boston University, Boston, MA"
+        },
+        "creator": [
+          { "@type": "Person", "name": "Jungjae Lee" },
+          { "@type": "Person", "name": "Uksang Yoo" },
+          { "@type": "Person", "name": "Jean Oh" },
+          { "@type": "Person", "name": "Jeffrey Ichnowski" }
+        ],
+        "encoding": {
+          "@type": "MediaObject",
+          "encodingFormat": "application/pdf",
+          "contentUrl": "https://jungjae01.github.io/assets/documents/cmu-urop-poster.pdf"
+        },
+        "about": ["Tendon transmission", "Robotic-hand simulation", "Friction and hysteresis"],
+        "inLanguage": "en"
+      }
+    </script>
+    <script src="../shared/research-page.js" defer></script>
+  </head>
+
+  <body class="research-page research-page--poster">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="research-topbar">
+      <nav class="research-nav page-width" aria-label="Research page navigation">
+        <a class="back-link" href="../../index.html#research-posters">← Back to Research Posters</a>
+        <div class="section-links">
+          <a href="#system-overview">System</a>
+          <a href="#methodology">Method</a>
+          <a href="#results">Results</a>
+          <a href="#citation">Resources</a>
+        </div>
+      </nav>
+    </header>
+
+    <header class="research-masthead">
+      <div class="header-width">
+        <p class="content-type">Research Poster · <time datetime="2026">2026</time></p>
+        <h1>NewTen: Friction-Aware Tendon Transmission for GPU-Accelerated Dexterous Hand Simulation</h1>
+        <p class="authors"><strong>Jungjae Lee<sup>1,2</sup></strong>, <span>Uksang Yoo<sup>2,3</sup></span>, <span>Jean Oh<sup>2</sup></span>, <span>Jeffrey Ichnowski<sup>2</sup></span></p>
+        <p class="affiliation-summary">Boston University · Carnegie Mellon University · University of California, Berkeley</p>
+        <details class="affiliations">
+          <summary>Author affiliations</summary>
+          <p><sup>1</sup> Department of Electrical and Computer Engineering, Boston University, Boston, MA</p>
+          <p><sup>2</sup> Robotics Institute, Carnegie Mellon University, Pittsburgh, PA</p>
+          <p><sup>3</sup> University of California, Berkeley, Berkeley, CA</p>
+        </details>
+        <p class="venue">29th Undergraduate Research Symposium · Boston · <time datetime="2026">2026</time></p>
+        <p class="masthead-summary">NewTen models how routed tendon friction and loading history change actuator effort before it reaches a robotic hand. A reusable transmission layer connects this stateful behavior to Newton dynamics; matched-command ORCA simulations reveal the resulting motion and tension response.</p>
+        <div class="resource-links" aria-label="Research resources">
+          <a class="resource-link resource-link--primary" href="../../assets/documents/cmu-urop-poster.pdf">Poster</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="system-overview" class="research-section" aria-labelledby="system-overview-heading">
+        <div class="text-width">
+          <p class="section-index">01 / System</p>
+          <h2 id="system-overview-heading">System Overview</h2>
+          <p>Route geometry and loading history determine modeled tendon tension; moment arms map that tension into joint torques. The demonstrated pipeline computes transmission on the CPU and couples it to GPU-accelerated Newton/Warp hand dynamics.</p>
+        </div>
+        <figure class="research-figure media-width">
+          <a class="figure-link" href="../../assets/images/research/5-cmu-robotics-institute/newten_architecture.png" aria-label="Open full-resolution NewTen system architecture">
+            <img src="../../assets/images/research/5-cmu-robotics-institute/newten_architecture.png" width="4008" height="2774" fetchpriority="high" alt="NewTen architecture: route and joint-state inputs feed CPU friction-memory and torque calculations, coupled to Newton/Warp GPU physics; a dashed branch marks physical validation in progress.">
+          </a>
+          <figcaption>Stateful transmission connects actuator commands to Newton joint torques, with joint-state feedback closing the simulation loop. <span class="figure-credit">NewTen system architecture.</span> <a class="figure-zoom" href="../../assets/images/research/5-cmu-robotics-institute/newten_architecture.png">Open full-resolution figure ↗</a></figcaption>
+        </figure>
+        <div class="text-width">
+          <h3>Implemented components</h3>
+          <ul>
+            <li><strong>Stateful transmission:</strong> route-dependent tension attenuation with pull, stick, and release memory.</li>
+            <li><strong>Newton coupling:</strong> moment-arm projection from transmitted tension to joint torque.</li>
+            <li><strong>Synchronized evaluation:</strong> matched-command simulations with linked pose, joint-motion, and tension records.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="motivation" class="research-section" aria-labelledby="motivation-heading">
+        <div class="text-width">
+          <p class="section-index">02 / Motivation</p>
+          <h2 id="motivation-heading">Research Motivation</h2>
+          <p>Simplified command-to-torque mappings can omit tension losses along a tendon route and differences between loading and release. NewTen makes these effects explicit so their influence on simulated motion can be studied. The longer-term question is whether identified transmission models improve predictions of a physical hand.</p>
+        </div>
+      </section>
+
+      <section id="system-design" class="research-section" aria-labelledby="system-design-heading">
+        <div class="text-width">
+          <p class="section-index">03 / Design</p>
+          <h2 id="system-design-heading">System Design</h2>
+          <p>A generic four-link mechanism isolates the effect of tendon extent. Its full-length route spans all four links; the partial route primarily actuates the proximal joints. The ORCA experiment uses separate, estimated hand routes.</p>
+        </div>
+        <div class="media-pair media-width">
+          <figure class="research-figure">
+            <h3 class="figure-title">Full and partial routes</h3>
+            <a class="figure-link" href="../../assets/images/research/5-cmu-robotics-institute/partial_routing_initial.png" aria-label="Open full-resolution four-link tendon routes">
+              <img src="../../assets/images/research/5-cmu-robotics-institute/partial_routing_initial.png" width="1920" height="1080" loading="lazy" alt="A straight four-link simulated mechanism with a red full-length tendon and a blue partial-length tendon.">
+            </a>
+            <figcaption>The two routes act on different portions of the same mechanism. <span class="figure-credit">NewTen four-link simulation.</span></figcaption>
+          </figure>
+          <figure class="research-figure">
+            <h3 class="figure-title">Combined bending response</h3>
+            <a class="figure-link" href="../../assets/images/research/5-cmu-robotics-institute/partial_routing_s_shape.png" aria-label="Open full-resolution combined tendon actuation">
+              <img src="../../assets/images/research/5-cmu-robotics-institute/partial_routing_s_shape.png" width="1920" height="1080" loading="lazy" alt="The four-link mechanism bends in opposing directions along its length under combined full and partial tendon actuation.">
+            </a>
+            <figcaption>Combined actuation changes the bending profile along the chain. <span class="figure-credit">NewTen four-link simulation.</span></figcaption>
+          </figure>
+        </div>
+        <div class="text-width">
+          <details class="research-details">
+            <summary>Model details</summary>
+            <p>Transmission memory retains prior command, tension, and pull, stick, or release phase. Route bends set attenuation; loading history affects transmitted tension. Moment arms project that tension into joint torque. The displayed ORCA comparison uses constant estimated moment arms.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="methodology" class="research-section" aria-labelledby="methodology-heading">
+        <div class="text-width">
+          <p class="section-index">04 / Method</p>
+          <h2 id="methodology-heading">Methodology</h2>
+          <p>One command schedule drives each comparison through the same five stages.</p>
+        </div>
+        <ol class="method-steps text-width">
+          <li>
+            <h3>Configure</h3>
+            <p>Set the mechanism, tendon routes, moment arms, and transmission parameters.</p>
+          </li>
+          <li>
+            <h3>Update transmission</h3>
+            <p>Use the command and retained loading state to compute transmitted tension.</p>
+          </li>
+          <li>
+            <h3>Project torque</h3>
+            <p>Map tendon tensions into joint torques through the moment arms.</p>
+          </li>
+          <li>
+            <h3>Advance and record</h3>
+            <p>Integrate Newton dynamics and save joint motion and tendon-tension records.</p>
+          </li>
+          <li>
+            <h3>Compare</h3>
+            <p>Inspect matched friction cases at shared saved timestamps.</p>
+          </li>
+        </ol>
+        <figure class="research-figure media-width">
+          <video controls playsinline preload="metadata" poster="../../assets/research-pages/newten/partial-routing-poster.png" width="1920" height="1080" aria-label="NewTen full and partial tendon-routing simulation, five times slower playback" aria-describedby="partial-routing-caption">
+            <source src="../../assets/images/research/5-cmu-robotics-institute/newten_partial_routing_slow_motion_5x.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="../../assets/images/research/5-cmu-robotics-institute/newten_partial_routing_slow_motion_5x.mp4">Download the partial-routing simulation</a>.
+          </video>
+          <figcaption id="partial-routing-caption">Generic four-link simulation, μ = 0.2: a red full-length tendon and periwinkle partial tendon change the bending profile. Playback is 5× slower; 0–1.28 s of simulated motion spans 6.45 s of video. <a href="../../assets/images/research/5-cmu-robotics-institute/newten_partial_routing_slow_motion_5x.mp4">Download video</a></figcaption>
+        </figure>
+      </section>
+
+      <section id="experimental-setup" class="research-section" aria-labelledby="experimental-setup-heading">
+        <div class="text-width">
+          <p class="section-index">05 / Experiments</p>
+          <h2 id="experimental-setup-heading">Experimental Setup</h2>
+          <p>The ORCA comparison changes tendon-transmission friction while preserving the six-tendon command schedule, hand geometry, and fixed-ball scene.</p>
+        </div>
+        <div class="table-wrap text-width" role="region" aria-label="ORCA matched simulation conditions" tabindex="0">
+          <table>
+            <caption>Matched-command simulation protocol</caption>
+            <thead>
+              <tr><th scope="col">Condition</th><th scope="col">Recorded setting</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Tendon-friction cases</th><td>μ = 0 and μ = 0.25; identical actuator commands</td></tr>
+              <tr><th scope="row">Timing</th><td>0–12 s; 0.002-s control step; 12 Newton integration substeps per control step</td></tr>
+              <tr><th scope="row">Command phases</th><td>Open 0–1 s; load 1–5 s; hold 5–7 s; unload 7–11 s; settle 11–12 s</td></tr>
+              <tr><th scope="row">Saved outputs</th><td>6,001 samples per case; index PIP angle and commanded/transmitted index-flexor tension</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-width">
+          <details class="research-details">
+            <summary>Experiment provenance and limitations</summary>
+            <p>The video and plots share replay <code>101326_013929_poster_asset_replay</code> of reference experiment <code>101126_211648_camera_b_60_20</code>. All panels select a common saved timestamp. Original time, command, and transmission records match the replay; original full joint trajectories were unavailable, so complete joint-by-joint identity to that earlier execution cannot be verified.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="results" class="research-section" aria-labelledby="results-heading">
+        <div class="text-width">
+          <p class="section-index">06 / Results</p>
+          <h2 id="results-heading">Evaluation &amp; Results</h2>
+          <p>Under identical commands, changing modeled tendon friction changes index PIP motion and produces transmission hysteresis.</p>
+        </div>
+        <figure class="research-figure media-width">
+          <video controls playsinline preload="metadata" poster="../../assets/images/research/5-cmu-robotics-institute/newten_orca_five_panel_t7s.png" width="1920" height="944" aria-label="Matched-command ORCA simulation comparing frictionless and friction-aware tendon transmission" aria-describedby="orca-video-caption">
+            <source src="../../assets/images/research/5-cmu-robotics-institute/newten_orca_five_panel.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="../../assets/images/research/5-cmu-robotics-institute/newten_orca_five_panel.mp4">Download the ORCA simulation comparison</a>.
+          </video>
+          <figcaption id="orca-video-caption">The same 12-second ORCA replay links two angled hand views, a frontal pose overlay, and synchronized joint-motion and transmission plots. Manual playback, 30 FPS; all signals are modeled outputs. <a href="../../assets/images/research/5-cmu-robotics-institute/newten_orca_five_panel.mp4">Download video</a></figcaption>
+        </figure>
+        <div class="media-pair media-width newten-plot-pair">
+          <figure class="research-figure">
+            <h3 class="figure-title">Index PIP Joint Motion</h3>
+            <a class="figure-link" href="../../assets/images/research/5-cmu-robotics-institute/orca_joint_angle_comparison_poster_v2.png" aria-label="Open full-resolution ORCA index PIP joint-angle comparison">
+              <picture>
+                <source media="(max-width: 600px)" srcset="../../assets/research-pages/newten/index-pip-motion-web-mobile.png">
+                <img src="../../assets/research-pages/newten/index-pip-motion-web.png" width="3000" height="1880" loading="lazy" decoding="async" alt="Index PIP angle in degrees over 12 simulated seconds: the orange frictionless trace flexes farther during loading, while the dashed pink mu equals 0.25 trace remains flexed longer during release; markers identify seven seconds.">
+              </picture>
+            </a>
+            <figcaption>The index PIP trajectories separate during loading; μ = 0.25 retains flexion longer during release. <a class="figure-zoom" href="../../assets/images/research/5-cmu-robotics-institute/orca_joint_angle_comparison_poster_v2.png">Open full-resolution figure ↗</a></figcaption>
+          </figure>
+          <figure class="research-figure">
+            <h3 class="figure-title">Index-Flexor Loading and Release</h3>
+            <a class="figure-link" href="../../assets/images/research/5-cmu-robotics-institute/orca_transmission_hysteresis_poster_v2.png" aria-label="Open full-resolution ORCA index-flexor transmission-hysteresis plot">
+              <picture>
+                <source media="(max-width: 600px)" srcset="../../assets/research-pages/newten/index-flexor-loading-release-web-mobile.png">
+                <img src="../../assets/research-pages/newten/index-flexor-loading-release-web.png" width="3000" height="1880" loading="lazy" decoding="async" alt="Modeled transmitted index-flexor tension versus commanded tension in newtons: orange mu equals zero follows ideal transmission; dashed pink mu equals 0.25 has distinct loading and release branches. Markers identify seven seconds.">
+              </picture>
+            </a>
+            <figcaption>The friction-aware model follows different loading and release branches for the same command. Tensions are modeled outputs. <a class="figure-zoom" href="../../assets/images/research/5-cmu-robotics-institute/orca_transmission_hysteresis_poster_v2.png">Open full-resolution figure ↗</a></figcaption>
+          </figure>
+        </div>
+        <div class="text-width">
+          <h3 id="poster-results-heading">Selected Results from the CMU Poster</h3>
+        </div>
+        <div class="table-wrap text-width" role="region" aria-labelledby="poster-results-heading" tabindex="0">
+          <table>
+            <caption>Poster-reported ORCA simulations. Numeric rows: t = 7 s, with a 420 N index-flexor command in both cases. The loading/release row describes the full sequence.</caption>
+            <thead>
+              <tr><th scope="col">Observation</th><th scope="col">μ = 0</th><th scope="col">μ = 0.25</th><th scope="col">Poster finding</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Index PIP angle [deg]</th><td>41.37</td><td>31.15</td><td>10.22° less flexion</td></tr>
+              <tr><th scope="row">Modeled transmitted tension [N]</th><td>420.00</td><td>299.04</td><td>28.8% lower modeled tension</td></tr>
+              <tr><th scope="row">Loading / release</th><td>Ideal transmission</td><td>Distinct branches</td><td>Model-generated hysteresis</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-width">
+          <p class="figure-credit">Compiled from the <a href="../../assets/documents/cmu-urop-poster.pdf">NewTen poster</a>, “Results: Quantitative Comparison”: two numeric rows reproduce its table and reported differences; the response row summarizes the adjacent plot. The comparison uses constant estimated moment arms and uncalibrated transmission parameters.</p>
+        </div>
+      </section>
+
+      <section id="discussion" class="research-section" aria-labelledby="discussion-heading">
+        <div class="text-width">
+          <p class="section-index">07 / Discussion</p>
+          <h2 id="discussion-heading">Discussion &amp; Limitations</h2>
+          <h3>Current evidence</h3>
+          <p>NewTen implements stateful tendon transmission coupled to Newton dynamics. Matched-command ORCA simulations demonstrate hysteresis and friction-dependent joint motion. The poster reports simulation findings, not numerical implementation-error metrics or physical measurements; these differences do not establish improved hardware prediction.</p>
+          <h3>Next validation</h3>
+          <p>Physical route geometry and friction parameters still require identification. The next comparison will calibrate NewTen and a frictionless baseline independently on the same dataset, freeze their parameters, and evaluate held-out motion predictions and computational overhead.</p>
+        </div>
+      </section>
+
+      <section id="citation" class="research-section" aria-labelledby="citation-heading">
+        <div class="text-width">
+          <p class="section-index">08 / Resources</p>
+          <h2 id="citation-heading">Resources &amp; Project Status</h2>
+          <p>NewTen remains an ongoing research project. The presented poster documents simulation findings, rather than a peer-reviewed publication.</p>
+          <ul class="source-list">
+            <li><a href="../../assets/documents/cmu-urop-poster.pdf">NewTen research poster</a> — 29th Undergraduate Research Symposium, Boston University, Boston, MA, 2026. Presented. Authors: Jungjae Lee, Uksang Yoo, Jean Oh, and Jeffrey Ichnowski.</li>
+            <li><a href="../../labs/5-cmu-robotics-institute/index.html">CMU research experience</a> — project context and research role.</li>
+            <li><a href="../../assets/images/research/5-cmu-robotics-institute/newten_orca_five_panel.mp4">ORCA simulation demonstration</a> — matched-command replay, μ = 0/0.25.</li>
+            <li><a href="https://github.com/orcahand/orcahand_description" target="_blank" rel="noopener noreferrer">ORCA hand model</a> — external robot-description platform.</li>
+            <li><a href="https://github.com/newton-physics/newton" target="_blank" rel="noopener noreferrer">Newton</a> — external physics engine.</li>
+            <li><a href="https://github.com/NVIDIA/warp" target="_blank" rel="noopener noreferrer">NVIDIA Warp</a> — compute framework used by Newton.</li>
+          </ul>
+          <p>Figures and simulations: NewTen project materials. ORCA, Newton, and Warp are external platforms; their links are not a NewTen code release.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="research-footer">
+      <div class="page-width">
+        <a href="../../index.html#research-posters">Jungjae Lee · Research Posters</a>
+        <p>NewTen · Research poster · 2026.</p>
+      </div>
+    </footer>
+  </body>
+</html>
